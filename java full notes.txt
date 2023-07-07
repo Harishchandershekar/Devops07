@@ -1,0 +1,5799 @@
+Core java syllabus
+
+variables
+methods
+conditional statements
+loop statements
+arrays
+string functions
+static
+non static and jvm memory
+class and object
+Programming - 
+		factorial
+		fibonacci series
+		prime numbers
+		reverse of a string
+		odd even
+		patterns
+		bubble sort
+		no palindrome
+		string palindrome
+blocks
+constructor
+pass by value
+pass by reference
+composition
+inheritance
+method overloading
+method overriding
+typecasting
+polymorphism
+abstract class
+interface
+abstraction
+package
+access specifiers
+encapsulation
+object class
+string class
+exception handling
+threads
+file handling
+collections
+maps
+
+
+
+
+
+---------------------------------------------------------------------------
+
+
+
+Language - it is a medium to communicate between 2 entities
+--------------------------------------------------------------------------
+Programming language - It is a medium to communicate between a human and machine. We have various programming
+			 languages like C, C++, C#, Java, Python etc...
+----------------------------------------------------------------------------
+How a programming language is built?
+----------------------------------------------------------------------------
+English language - 
+
+Programming language -  
+---------------------------------------------------------------------------
+Softwares required - 
+
+1. Editors - Notepad
+	     Editplus
+
+2. Java software - 
+Java Development Kit(JDK)
+    Jdk 1.0
+	1.1
+	1.2
+	1.4	
+	1.5/5.0
+	1.6
+	1.7
+	1.8
+	1.9
+	1.10
+	1.11
+	1.12
+	1.13
+
+3. Integrated Development Environment(IDE)
+	Eclipse - Standard Edition(SE)
+		  Enterprise Edition(EE)
+		  Micro Edition(ME)
+
+4. Execution area
+	command prompt(cmd)
+-------------------------------------------------------------------
+How to launch notepad?
+-----------------------------------------------------------------
+How to launch Editplus?
+------------------------------------------------------------------
+How to launch command prompt?
+-------------------------------------------------------------------
+Commands used in Java
+
+1. cls - clear screen
+2. cd - change directory
+3. cd.. - change from current directory to previous directory
+4. mkdir - make directory
+5. javac - java compiler
+6. java - java interpreter
+
+
+
+-----------------------------------------------------------------------
+Token -
+	It is a smallest unit/part of program
+The types of tokens are:
+Identifiers
+Keywords
+Comments
+Operators
+Separators
+Literals
+
+--------------------------------------------------------------------------
+
+Identifiers - 
+	They are the names given to any java program
+
+----------------------------------------------------------------------
+
+Literals - 
+	They are the values which are used in java programming language
+In literals we have 
+Numeric literals
+Character literals
+Boolean literals
+String literals
+
+Numeric literals - 
+	Integer - 
+		Any number which is not having decimal value is called integer literal
+Ex: 
+
+	Decimal - 
+		Any number which is having decimal value is called decimal literal
+Ex:
+
+
+
+
+
+
+
+Character literals - 
+	Anything which is enclosed within single quote is called Character literal
+	We cannot have more than 1 character in Character literal
+Ex: 
+
+
+String literals - 
+	Anything which is enclosed within double quotes is called string literal
+
+
+
+
+Boolean literals - 
+	In java we have only 2 boolean values  -  true and false
+
+-----------------------------------------------------------------------------------
+
+
+
+
+
+Keywords - 
+	They are the predefined words having their own meaning respectively in java
+	In java we have 50 keywords as mentioned below
+
+abstract  assert***  boolean	
+break  byte  case 
+catch  char  class 
+const*  continue  default 
+do  double  else 
+enum****  extends  final	
+finally	 float  for 
+goto*  if  implements 
+import  instanceof  int 
+interface  long  native 
+new  package  private	
+protected  public  return	
+short  static  strictfp**	
+super  switch  synchronized 
+this  throw  Throws 
+transient  try  void 
+volatile  while
+
+
+
+
+
+* - not used 
+** - added in 1.2
+*** - added in 1.4
+**** - added in 5.0
+
+
+
+------------------------------------------------------------------------
+Comments - 
+	They are used to provide additional information or to skip the particular line of code
+
+In comments we have - 
+Single line comment //-------
+Block comment /*-----*/
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------
+Operators - 
+	They are the symbols used to perform some operations
+Ex: 3+10
+
+Operator type                Category               Operators
+
+unary                        postfix                expression++   expression--
+			     prefix                 ++expression   --expression   -expression  
+                                                    +expression    ~!
+
+arithmetic		     multiplicative          *   /   %
+			     additive     	     +   -
+
+shift			     shift		     <<   >>   >>>
+
+relational		     comparision	     <   >   <=   >=   instance of
+			     equality 		     ==   !=
+
+bitwise 		     bitwise and             &
+			     bitwise inclusive or    |
+			     bitwise exclusive or    ^
+
+logical			     logical and             &&
+			     logical or	             ||
+
+ternary			     ternary		      ?:
+
+assignment		     assignment	              =   +=   -=   /=   *=   ^=   %=   &=   <<=   >>=   >>>=
+
+--------------------------------------------------------------------------------------------
+
+
+
+
+Separators - 
+	They are used to separate the given/written java code
+a. braces  {}
+b. brackets  [] 
+c. semicolon  ;
+d. comma  ,
+e. parenthesis  ()
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------
+How to download Java software(JDK 1.8)?
+-------------------------------------------
+- On the system and launch the browser
+- In the google search bar type download jdk 1.8
+- click on search button
+- In the search results click on 1st link which will take you to oracle download page
+- scroll down and click on windows x64.exe of jdk and check the check box of license agreement and click on download
+- create an oracle account and download the .exe file
+- Once downloaded, in the search bar check whether .exe file is present
+- click on that and start installing  
+
+
+How to install java software?
+----------------------------------
+1. double click on the .exe file
+2. click on next next finish
+
+How to set the path?
+---------------------
+- Once the java software is installed, go to the below
+     C:\Program Files\Java\jdk1.8.0_261\bin
+ copy the path--->right click on this pc---click on properties----advanced system settings-----environmental variables
+- Under system variables select path---click on edit----click on new----paste the copied path---click on ok
+
+How to check whether java software is installed properly?
+---------------------------------------------------------------
+- Close the cmd prompt is it is already open
+- open command prompt
+- type javac and java separately some script/commands should be displayed
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------
+History of Java
+
+	James Gosling is the founder of Java in the year 1991 and the 
+software was named as Green Talk. The team which developed this software 
+was called green team. Later they renamed as Oak. Oak is the symbol of 
+strength and it is the national symbol of Germany
+	At the same time there was already an existing company called
+ Oak technologies which became a legal issue and changed
+the software name from Oak to Java in the year 1995.
+	James Gosling and his team went to an Island for coffee and the 
+coffee shop name was Java and hence they kept the software name as Java 
+and the logo as coffee mug.
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Java Architecture / How java program will get executed executed internally?
+---------------------------------------------------------------------------
+ - As a TE we will write the program in notepad/editplus, it is also called as source code which will be in human readable format
+ - Once after writing the program, save the program with .java extension in the below mentioned path
+   C:\pgm files\java\JDK 1.8_261\bin
+
+ - To convert this human readable format into machine readable format we have to perform 2 operations in the command prompt..i.e
+1. Java compilation(javac)
+2. Java Interpretation(java)
+
+ - The .java file will be given as input to java compiler which checks for rules and syntax and translates from .java file to .class file
+ - If we violate any rules/syntax we will get compile time error(CTE)
+
+ - .class file is an intermediate code which will be in byte code format which will neither be understood by humans nor by machine
+ - .class file will be given as input to java interpreter which will give the binary output which will be in machine readable format
+and inturn given to OS in the computer to generate the o/p in human readable format 
+
+ - Java interpreter will read the code line by line where java program gets executed line by line, top to bottom and from left to right
+ - It will execute the program
+ - It will translate from .class file to binary format
+
+During execution if we find any abnormal statement(Ex: 1/0--> arithmetic abnormal statement) we will get arithmentic exception
+i.e RTE(run time error)
+
+JIT(Just In Time) - It is whole responsible for converting from .class file to binary format
+
+JVM(Java Virtual Machine) - It is a virtual machine which doesnot exist physically and it is whole responsible to execute the program
+
+JRE(Java Runtime Environment) - It is an environmental setup to run the java program
+
+Why java is platform independent?(interview question)
+--------------------------------------------------------
+JRE is installed in every electronic device,hence the .class file can be executed on any electronic device, so java is platform independent
+
+JDK(JAva Development Kit) - It is a kit which consists of all the library files and utilities to develop a java s/w
+ 
+
+
+
+
+
+Java types
+------------------------------------------
+In java we can write the program in 4 types:
+
+Class
+Interface
+Enum
+Annotation
+----------------------------------------------------------------------
+
+
+
+
+Class - It is the blueprint/template to create an object
+----------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Class members
+-------------------------
+1. variable - datamember
+2. method  -  function member
+3. constructor
+
+
+
+
+
+
+
+
+
+class syntax:
+
+class classname    
+{                                               
+public static void main(String[] args)   //method   
+ { 
+   --------------------------                                   
+ }                                              
+} 
+
+
+command for compilation			command for interpretation
+
+syntax : javac classname.java           syntax : java classname
+
+
+
+Commands used in Java
+
+1. cls - clear screen
+2. cd - change directory
+3. cd.. - change from current directory to previous 
+directory
+4. mkdir - make directory
+5. javac - java compiler
+6. java - java interpreter
+
+
+finally : save it using notepad/editplus/eclipse
+---------------------------------------------------------------------
+How to install java software?
+----------------------------------------------
+How to set the path?
+
+cross check whether installed properly or not...
+---------------------------------------------------------------------
+
+Note: 
+- +(plus) operator will work as addition operator as well as 
+concatenation operator
+- If we use plus operator after/before string it will work as 
+concatenation operator
+- If we use plus operator between 2 numbers before/after string
+it will work as addition operator
+- To print both integers and string compulsorily we should use plus 
+operator
+
+
+
+--------------------------------------------------
+
+
+variable - it is a named memory location which can store some value or 
+data and can be changed for n number of times during execution.
+
+
+2 types of datatypes for variable
+--------------------------------
+1.primitive datatype
+       
+byte 
+short 
+int 
+long 
+float 
+double 
+char 
+boolean
+
+
+2.non primitive datatype   
+ 
+arrays 
+strings 
+classtype/reference type
+
+
+What is the difference between byte,short,int,long?
+-------------------------------------------------------
+Ans: capacity(range)
+
+byte--->1 byte---->8 bits
+
+range for byte
+------------------
+-2^n-1 to 2^n-1 -1
+
+Method
+-----------
+Method is a block of statements which will get executed whenever it is called or invoked
+
+
+
+
+
+2 types of variables
+
+1. local variable - 
+		    variable which is declared within the method
+                    cannot be classified in to static and non static
+                    it doesnot have any return value
+                    its scope is from beginning of the method to end 
+of the method
+                    it should be delcared before it is initialized
+2. global variable - 
+		    variable which is declared outside the method and 
+inside the class
+                    can be classified in to static and non static
+                    it has some return value
+                    its scope is from beginning of the class to end of 
+the class
+                    it cannot be reinitialized or declared in the next 
+line once it is declared 
+
+-------------------------------------------------------------------------------------------
+
+Conditional statements:
+---------------------------
+They are used to check logical conditions
+
+1. if condition
+------------------
+- Will return true or false 
+
+Syntax:
+-----------------
+if(condition)
+{
+--------
+--------
+--------
+}
+
+Ex:
+
+if(5>3)
+{
+	System.out.println("Hiiiii");
+}
+
+2. else condition
+----------------------
+
+Syntax:
+-----------------
+if(condition)   //true
+{
+--------
+--------
+--------
+}
+else   //if if condition is false
+{
+------
+------
+------
+}
+
+Ex 1:
+
+if(5>3)
+{
+	System.out.println("Hiiiii");
+}
+else
+{
+	System.out.println("byeeee");
+}
+
+Ex 2:
+
+String exp_result="Home page";
+String act_result="Home page";
+
+if(exp_result==act_result)
+{
+ System.out.println("it is true");
+}
+else
+{
+System.out.println("it is false");
+}
+
+3. else if condition
+----------------------
+
+Syntax:
+-----------------
+if(condition)   //true
+{
+--------
+--------
+--------
+}
+else if(condition)
+{
+------
+------
+------
+}
+else
+{
+-------
+-------
+}
+
+
+Ex: 
+
+int no;
+if(no>3)
+{
+	System.out.println("Hiiiii");
+}
+else if(no==10)
+{
+	System.out.println("its equal");
+}
+else
+{
+	System.out.println("byeeee");
+}
+
+4. nested if else
+-------------------------
+Syntax:
+
+if(condition)
+{
+if(condition)
+{
+---------
+---------
+}
+else
+{
+--------
+--------
+}
+else
+{
+-------
+-------
+}
+}
+
+Loop
+------
+Whenever we want to perform any operation repeatedly for n number of times , then we should go for loop
+
+for loop
+-------------
+Whenever we want to perform any operation repeatedly for n number of iterations, then we should go for forloop
+
+Ex: 
+WAP to print hello 6 times
+
+package RCCW6;
+public class Practice
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("hello");
+		System.out.println("hello");
+		System.out.println("hello");
+		System.out.println("hello");
+		System.out.println("hello");
+		System.out.println("hello");
+	}
+}
+
+Note: To optimise the program and to reduce the number of lines, we should go for loop statements
+- If we have a range with starting and ending the we can go for forloop statement
+
+for loop syntax:
+--------------------
+for(initialization; condition; increment/decrement)
+{
+---------
+---------
+}
+
+Ex: WAP to print hello 6 times using for loop
+-------------------------------------------------
+
+package RCCW6;
+public class Practice
+{
+	public static void main(String[] args) 
+	{
+		for(int i=1;i<=6;i++)
+		{
+			System.out.println("hello");
+		}
+	}
+}
+
+Ex 2:
+
+package RCCW6;
+public class Practice
+{
+	public static void main(String[] args) 
+	{
+		for(int i=1;i<=6;i++)
+		{
+			System.out.println("hello");
+			
+		}
+		System.out.println("hiiiiiiiiiiiii");
+	}
+}
+o/p
+----------
+hello
+hello
+hello
+hello
+hello
+hello
+hiiiiiiiiiiiii
+
+Note: for loop iteration is applicable only for the statements within the loop but not for the statements outside the loop
+
+i.e
+
+package RCCW6;
+public class Practice
+{
+	public static void main(String[] args) 
+	{
+		for(int i=1;i<=6;i++)
+		{
+			System.out.println("hello");
+			System.out.println("hiiiiiiiiiiiii");	
+		}
+	}
+}
+
+o/p
+----
+hello
+hiiiiiiiiiiiii
+hello
+hiiiiiiiiiiiii
+hello
+hiiiiiiiiiiiii
+hello
+hiiiiiiiiiiiii
+hello
+hiiiiiiiiiiiii
+hello
+hiiiiiiiiiiiii
+
+Switch case statement
+-------------------------
+Switch case is used for pattern matching
+- It matches with the character sequence and executes the particular case
+
+Syntax:
+--------
+switch(char seq)
+{
+case char seq:statement 1;
+	      break;
+case char seq:statement 2;
+	      break;
+case char seq:statement 3;
+	      break;
+default: statement;
+         break;
+}
+
+Ex:
+
+package RCCW6;
+public class Practice
+{
+	public static void main(String[] args) 
+	{
+		int input = 3;
+		switch(input)
+		{
+		case 1:System.out.println("chitranna");
+		break;
+		case 2:System.out.println("mosranna");
+		break;
+		case 3:System.out.println("puliyogare");
+		break;
+		case 4:System.out.println("pongal");
+		break;
+		default : System.out.println("upavasa e kannige");
+		break;
+		}
+	}
+}
+
+o/p
+-----
+puliyogare
+
+Note: If break(terminating statement) is not used along with the execution of particular case, further cases are also executed
+
+-------------------------------------------------------------------------------------------------------------------
+static - any member of a class which is declared with the keyword static is called static member of the class
+         it is single copy
+         it is always associated with class
+         static members are stored in static pool area(SPA)
+         it cannot be inherited
+         it cannot be overriden
+         it can be overloaded
+- whenever we want to access static members(variable/method) from one class to another class
+we have to use 
+classname.variablename
+or
+classname.methodname
+
+Note: In the class members, variables and methods can be classified into static and non static, constructor is always non static
+
+Note: 
+We can develop multiple classes in single file, which ever class is having main method that class name should be the file name
+For each and every class in the file there will be corresponding .class file generated
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Ex: WAP to demonstrate static members of the class accessible within the class
+
+package RCCW6;
+public class Practice
+{
+	static int a = 10;
+	static void add()
+	{
+		System.out.println("i didn't eat breakfast today");
+	}
+	public static void main(String[] args)
+	{
+		add();
+		System.out.println(a);
+	}
+}
+
+o/p
+-----
+i didn't eat breakfast today
+10
+
+Assignment
+------------------
+WAP to add 3 numbers with static within the class using method without parameter
+WAP to find the area of parallelogram with static within the class using method without parameter
+WAP to find the area of triangle with static within the class using method with parameter
+WAP to find the area of rectangle with static within the class using method with parameter
+WAP to multiply 3 numbers with static within the class using method with return type
+WAP to find the area of circle with static within the class using method with return type
+
+
+1. WAP to find the area of circle with static between the classes using method without parameter
+
+package RCCW6;
+class Punter
+{
+	static void area()
+	{
+		int r = 6;
+		final double pi = 3.142;
+		double result =pi*r*r;
+		System.out.println(result);
+	}
+}
+public class Practice
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("--------main starts------");
+		Punter.area();
+		System.out.println("----------main ends------");
+	}
+}
+
+o/p
+----
+--------main starts------
+113.112
+----------main ends------
+
+
+
+
+
+2. WAP to find the area of circle with static between the classes using method with parameter
+
+package RCCW6;
+class Punter
+{
+	static void area(int r , final double pi)
+	{
+		double result =pi*r*r;
+		System.out.println(result);
+	}
+}
+public class Practice
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("--------main starts------");
+		Punter.area(7, 3.142);
+		System.out.println("----------main ends------");
+	}
+}
+
+o/p
+-----
+--------main starts------
+153.958
+----------main ends------
+
+
+
+
+
+
+3. WAP to find the area of circle with static between the classes using method with return type
+
+package RCCW6;
+class Punter
+{
+	static double area()
+	{
+		int r = 6;
+		final double pi = 3.142;
+		double result =pi*r*r;
+        return result;
+	}
+}
+public class Practice
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("--------main starts------");
+		double x = Punter.area();
+		System.out.println(x);
+		System.out.println("----------main ends------");
+	}
+}
+
+o/p
+----
+--------main starts------
+113.112
+----------main ends------
+
+
+4. WAP to find the area of circle with static between the classes using method with return type and method with parameter
+
+package RCCW6;
+class Punter
+{
+	static double area(int r, final double pi)
+	{
+		double result =pi*r*r;
+        	return result;
+	}
+}
+public class Practice
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("--------main starts------");
+		double x=Punter.area(7, 3.142);
+		System.out.println(x);
+		System.out.println("----------main ends------");
+	}
+}
+
+o/p
+-----
+--------main starts------
+153.958
+----------main ends------
+
+
+
+
+
+Assignment
+------------------
+WAP to add 3 numbers with static between the classes using method without parameter
+WAP to find the area of parallelogram with static between the classes using method without parameter
+WAP to find the area of triangle with static between the classes using method with parameter
+WAP to find the area of rectangle with static between the classes using method with parameter
+WAP to multiply 3 numbers with static between the classes using method with return type
+WAP to find the area of circle with static between the classes using method with return type
+
+
+--------------------------------------------------------------------------------------------------------------
+
+non static - any member of a class which is not declared with the 
+keyword static is called non static member of the class
+             it is multiple copy
+             it is always associated with object
+             non static members are stored in heap memory
+             it can be inherited
+             it can be overriden
+             it can be overloaded 
+whenever we want to access from nonstatic to static we have to create object
+ie object.variable_name
+   object.method_name
+or 
+   reference_variable.variable_name
+   reference_variable.method_name
+
+
+Ex: 
+
+package RCCW6;
+public class Practice
+{
+	int a=10;
+	void disp()
+	{
+		System.out.println("hiiiiiiiiiiii");
+	}
+	 public static void main(String[] args)
+	{
+		new Practice().disp();
+		System.out.println(new Practice().a);
+	}
+}
+
+o/p
+-----
+hiiiiiiiiiiii
+10
+
+
+Assignment
+------------------
+WAP to add 3 numbers from nonstatic to static between the classes using method without parameter
+WAP to find the area of parallelogram from nonstatic to static between the classes using method without parameter
+WAP to find the area of triangle from nonstatic to static between the classes using method with parameter
+WAP to find the area of rectangle from nonstatic to static between the classes using method with parameter
+WAP to multiply 3 numbers from nonstatic to static between the classes using method with return type
+WAP to find the area of circle from nonstatic to static between the classes using method with return type
+
+WAP to add 3 numbers from nonstatic to static within the class using method without parameter
+WAP to find the area of parallelogram from nonstatic to static within the class using method without parameter
+WAP to find the area of triangle from nonstatic to static within the class using method with parameter
+WAP to find the area of rectangle from nonstatic to static within the class using method with parameter
+WAP to multiply 3 numbers from nonstatic to static within the class using method with return type
+WAP to find the area of circle from nonstatic to static within the class using method with return type
+
+
+
+
+
+
+
+
+
+
+JVM memory 
+-----------------------------------
+It is divided in to 4 parts:
+1. Stack
+-------------
+It is used for execution
+
+2. Heap memory
+---------------
+It is used for storing non static members of class
+
+3. Static pool area
+--------------------
+It is used for storing static members of class
+
+4. Method area
+----------------
+It is used for storing method body/definition
+
+- When ever you write the program and save the file, .java file will be created
+- All the class (entire program) will be copied into JVM memory
+- The class loader will come into picture firstly and loads all the static members
+into the static pool area(only the method declaration) and corresponding body(definition)
+gets stored in method area
+- All the non static members of the class will be loaded into heap memory (only the method 
+declaration) and corresponding body(definition) gets stored in method area
+- The JVM will come into picture now and searchs for the main() and binds/combines the method
+declaration and defintion and because of this stack helps for execution
+This is why always JVM starts executing from the main method
+- Once the main method starts to get executed all the statements in the main method will get executed
+- In the main method when we create an object new will create random memory space into heapmemory and constructor will initialize all 
+the non static members in heapmemory
+
+Reference Variable
+-------------------------------------
+It is a special type of variable which stores object address and null
+
+Note: If we create multiple objects each object will have unique address
+- whenever we print reference variable it will print object address
+ - object address is called as fully qualified path
+
+
+Reference variable declaration
+--------------------------------------
+Syntax: class_name reference_variable;
+
+Ex: Demo d1;
+
+Reference variable initialization
+--------------------------------------
+Syntax: reference_variable=object;
+
+Ex: d1=new Demo();
+
+Combination of Reference variable declaration and Reference variable initialization in a single line
+--------------------------------------------------------------------------------------------------------
+Syntax: class_name reference_variable = object;
+
+Ex: Demo d1=new Demo();
+
+Homogeneous type of object creation
+-----------------------------------------
+When the class name/classtype and constructor name is same then that type of object creation is called Homogeneous type of object creation
+
+Fully qualified path - package_name.class_name@hexadecimal_number
+
+
+Why reference variable?
+------------------------------
+In order to avoid more memory consumption because of n number of objects being created, we can use reference variable and
+access non static members from nonstatic to static 
+i.e  reference_variable.variable_name
+     reference_variable.method_name
+
+WAP to demonstrate the use of reference variable
+-----------------------------------------------------
+ 
+package RCCW6;
+public class Practice
+{
+	void add()
+	{
+		System.out.println("hiiiiiiiii");
+	}
+     public static void main(String[] args) 
+     {
+	    Practice x=new Practice();
+	    x.add();
+	    x.add();
+	    x.add();
+	    x.add();
+	    x.add();
+     }
+}
+
+
+o/p
+---------
+hiiiiiiiii
+hiiiiiiiii
+hiiiiiiiii
+hiiiiiiiii
+hiiiiiiiii
+
+Note: to access add method n number of times if we don't create reference variable, every time we need to create object and use the method
+So to avoid excess of memory consumption if we use reference variable, create object only once, and access all the non static members
+
+
+Syntax: package_name.class_name@hexadecimal_number
+
+Note: Returntype of object is class_type/class_name
+
+Ex2 : 
+
+package RCCW6;
+public class Practice
+{
+	int a=10;
+	void add()
+	{
+		System.out.println("hiiiiiiiii");
+	}
+     public static void main(String[] args) 
+     {
+	    Practice x=new Practice();
+	    x.add();
+	    System.out.println(x.a);
+     }
+}
+
+o/p
+----
+hiiiiiiiii
+10
+
+
+//WAP to demonstrate usage of reference variable between the classes
+package RCCW6;
+class Punter
+{
+	int a=10;
+	void sub()
+	{
+		int s=2;
+		int b=1;
+		int c=s-b;
+		System.out.println(c);
+	}
+	void add()
+	{
+		System.out.println("hiiiiiiiii");
+	}
+}
+public class Practice
+{
+     public static void main(String[] args) 
+     {
+    	Punter x=new Punter();
+	    x.add();  //hiiiiiiiii
+	    x.sub(); //1
+	    System.out.println(x.a);  //10
+     }
+}
+
+o/p
+-----
+hiiiiiiiii
+1
+10
+
+
+Assignment(with jvm diagram)
+------------------------------
+
+WAP to add 3 numbers from nonstatic to static using reference variable within the class using method without parameter
+WAP to find the area of parallelogram from nonstatic to static using reference variable within the class using method without parameter
+WAP to find the area of triangle from nonstatic to static using reference variable within the class using method with parameter
+WAP to find the area of rectangle from nonstatic to static using reference variable within the class using method with parameter
+WAP to multiply 3 numbers from nonstatic to static using reference variable within the class using method with return type
+WAP to find the area of circle from nonstatic to static using reference variable within the class using method with return type
+
+WAP to add 3 numbers from nonstatic to static using reference variable between the classes using method without parameter
+WAP to find the area of parallelogram from nonstatic to static using reference variable between the classes using method without parameter
+WAP to find the area of triangle from nonstatic to static using reference variable between the classes using method with parameter
+WAP to find the area of rectangle from nonstatic to static using reference variable between the classes using method with parameter
+WAP to multiply 3 numbers from nonstatic to static using reference variable between the classes using method with return type
+WAP to find the area of circle from nonstatic to static using reference variable between the classes using method with return type
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Blocks
+---------------------------------------------------------------------------
+Java provides separate blocks called 
+SIB ---> Static Initialisation Block
+IIB ---> Instance Initialisation Block
+
+SIB ---> Static Initialisation Block
+-------------------------------------------------------
+- Any block which is declared with the keyword static is called Static Initialisation Block
+- It will get executed before main method
+- We can have n number of SIBs
+- The order of execution is sequential
+
+Syntax:    static {
+                    ----
+                    ----
+                    ----
+                  }
+
+
+Ex:
+
+
+SIB
+------------
+package RCCW6;
+public class block 
+{
+	static
+	{
+		System.out.println("houdu huliyaaaaaaaa");
+	}
+	static
+	{
+		System.out.println("illa huliyaaaaaaaa");
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println("aytuuuuuuuuuuuuu");
+	}
+
+}
+
+o/p
+-----
+houdu huliyaaaaaaaa
+illa huliyaaaaaaaa
+aytuuuuuuuuuuuuu
+
+
+
+
+IIB
+-----
+package RCCW6;
+public class block 
+{
+	{
+		System.out.println("houdu huliyaaaaaaaa");
+	}
+	{
+		System.out.println("illa huliyaaaaaaaa");
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println("------main starts------");
+		new block();
+		System.out.println("------main ends------");
+	}
+}
+
+
+o/p
+----
+------main starts------
+houdu huliyaaaaaaaa
+illa huliyaaaaaaaa
+------main ends------
+
+
+SIB-IIB
+------------
+package RCCW6;
+public class block 
+{
+	static
+	{
+		System.out.println("houdu huliyaaaaaaaa");
+	}
+	{
+		System.out.println("illa huliyaaaaaaaa");
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println("------main starts------");
+		new block();
+		System.out.println("------main ends------");
+	}
+}
+
+
+o/p
+----
+houdu huliyaaaaaaaa
+------main starts------
+illa huliyaaaaaaaa
+------main ends------
+
+
+
+
+IIB-constructor
+------------------
+package RCCW6;
+public class block 
+{
+	{
+		System.out.println("houdu huliyaaaaaaaa");
+	}
+	{
+		System.out.println("illa huliyaaaaaaaa");
+	}
+	block()
+	{
+		System.out.println("nanu constructor");
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println("------main starts------");
+		new block();
+		System.out.println("------main ends------");
+	}
+}
+
+
+o/p
+-----
+------main starts------
+houdu huliyaaaaaaaa
+illa huliyaaaaaaaa
+nanu constructor
+------main ends------
+
+
+
+
+SIB-IIB-constructor
+----------------------
+package RCCW6;
+public class block 
+{
+	static
+	{
+		System.out.println("bangarada manushya");
+	}
+	static
+	{
+		System.out.println("tagadu manushya");
+	}
+	{
+		System.out.println("houdu huliyaaaaaaaa");
+	}
+	{
+		System.out.println("illa huliyaaaaaaaa");
+	}
+	block()
+	{
+		System.out.println("nanu constructor");
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println("------main starts------");
+		new block();
+		System.out.println("------main ends------");
+	}
+}
+
+o/p
+-----
+bangarada manushya
+tagadu manushya
+------main starts------
+houdu huliyaaaaaaaa
+illa huliyaaaaaaaa
+nanu constructor
+------main ends------
+
+
+
+
+
+IIB ---> Instance Initialisation Block
+-------------------------------------------------------
+- Any block which is declared without the keyword static is called Instance Initialisation Block
+- It will get executed whenever an object is created
+- We can have n number of IIBs
+- The order of execution is sequential
+
+Syntax:        {
+                 ----
+                 ----
+                 ----
+               }
+
+
+
+
+
+
+Note 1. If the class is having SIB and main method, always the order of execution is ---> first SIB will get executed and then 
+the main method
+ 2. If the class is having SIB, IIB and main method, always the order of execution is ---> first SIB will get executed and then 
+the main method, then the IIB
+3.  If the class is having IIB,constructor and main method, always the order of execution is ---> first main method will get executed and 
+ then the IIB then the constructor
+4. If the class is having SIB, IIB,constructor and main method, always the order of execution is ---> first SIB, then  main method will get executed and 
+ then the IIB then the constructor
+
+
+
+Constructor
+-----------------------------------------
+It is a special method/special member of a class which is used to initialize data members/variables
+
+Syntax: 
+
+class class_name
+{
+class_name()   //constructor
+{
+-------
+-------
+}
+}
+
+Ex: 
+
+class Qspiders
+{
+Qspiders()  //constructor
+{
+------
+------
+}
+}
+
+Rules of constructor
+-----------------------------
+1. Constructor name should always be same as classname
+2. It will not have any return type
+3. It will not return any value
+4. It is always non static
+5. Whenever an object is created, it will get invoked
+
+Ex:
+
+package RCCW6;
+public class constructoruuuuuuu 
+{
+	constructoruuuuuuu() 
+	{
+		System.out.println("nanu constructor");
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println("-----main starts----");
+		new constructoruuuuuuu();
+		System.out.println("------main ends-----");
+	}
+}
+
+o/p
+-----
+-----main starts----
+nanu constructor
+------main ends-----
+
+WAP to initialize the variable/data member through constructor
+
+package RCCW6;
+
+public class help 
+{
+	int x;        //global variable
+	help(int y)   //constructor is used to initialize the datamember
+	{
+		x=y;  //copy the value 143 from local variable y into global variable x
+	}
+	public static void main(String[] args) 
+	{
+		help h = new help(143);    //143 is passed as an argument when constructor is invoked
+		System.out.println(h.x);   //reference_variable.variable_name
+	}
+}
+
+
+o/p
+------
+143
+
+
+Explaination
+-----------------------------------------------------------
+- Whenever a CL loads all the static members in to the SPA , they get initialized in the SPA
+- JVM starts executing from the main method, object is created to access non static members into 
+static context...this is the first statement in the main method... Whenever an object is created constructor gets
+invoked
+- New operator will create random memory space into HM
+- Constructor will initialize all the non static members into HM when object gets created itself
+- When we pass the arguments , the non static members will get initialized with the 
+passed values
+- Object address will get stored in reference variable and using reference variable we 
+ can access non static members
+
+
+WAP to print empolyee id, employee name and employee salary of Manga through reference variable
+
+package RCCW6;
+
+public class Manga 
+{
+	int emp_id;
+	double emp_sal;
+	String emp_name;
+	Manga(int p, String q, double r)
+	{
+		emp_id = p;
+		emp_sal = r;
+		emp_name = q;
+	}
+	public static void main(String[] args) 
+	{
+		Manga m = new Manga(1234,"Manga",10000.34);
+		System.out.println(m.emp_id);
+		System.out.println(m.emp_name);
+		System.out.println(m.emp_sal);
+	}
+}
+
+o/p
+----
+1234
+Manga
+10000.34
+
+
+Assignment(with JVM diagram)
+--------------------------------
+WAP to print student_id, student_name and student_salary of HD_Kumaraswamy through reference variable and constructor
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+This keyword
+---------------------------------------------------
+- It is used to point to current object
+- When the global and local variable name are same then to differentiate between them, we will go for
+this keyword
+- It is always used in non static
+- It is also called as default reference variable
+
+Ex:
+
+package RCCW6;
+public class Manga 
+{
+	int emp_id;
+	String emp_sal;
+	double emp_name;
+	Manga(int emp_id, String emp_sal, double emp_name)
+	{
+		this.emp_id = emp_id;
+		this.emp_sal = emp_sal;
+		this.emp_name = emp_name;
+	}
+	public static void main(String[] args) 
+	{
+		Manga m = new Manga(1234,"Manga",10000.34);
+		System.out.println(m.emp_id);
+		System.out.println(m.emp_name);
+		System.out.println(m.emp_sal);
+	}
+}
+
+o/p
+-----
+1234
+10000.34
+Manga
+
+Assignment
+-------------
+WAP to initialize company name, company salary, company location through constructor using this keyword
+
+---------------------------------------------------------------------------------------------------------------
+
+Composition
+
+A class having an object of another class is called composition/has a relationship
+
+Ex:
+
+package RCCW6;
+class Demo
+{
+	void add()
+	{
+		System.out.println("hiiiiiiiiii");
+	}
+}
+public class Mainclass   //Mainclass has a relationship(composition) with Demo class
+{
+	public static void main(String[] args) 
+	{
+		Demo d = new Demo();
+		d.add();
+	}
+}
+
+
+o/p
+-----
+hiiiiiiiiii
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Array
+-----------------------
+
+- Array is a linear data structure which can store homogeneous(same) type of data
+- To find the size/length of elements in array we use length keyword
+    i.e array_name.length
+- If the value is not stored in particular index and if we try to print that variable, default value gets printed based on datatype
+- If the given index crosses the maximum length of array, we get ArrayIndexOutofBoundsException
+
+Drawbacks
+-------------
+- array size is fixed
+- we can store only homogeneous type of data
+
+Ex: int a=10;
+    int b=20;
+    int c=30;
+    int d=40;
+
+Array declaration
+---------------------------------
+Syntax: datatype[] array_name;
+
+Ex: int[] arr;
+
+Array size Initialization
+------------------------------------
+Syntax: array_name=new datatype[size];
+
+Ex: arr=new int[4];
+
+Store the elements/values into an array
+-----------------------------------------------
+Syntax: array_name[index]=value;
+
+Ex: 
+arr[0]=10;
+arr[1]=20;
+arr[2]=30;
+arr[3]=40;
+
+Array utilization
+--------------------------------------
+Ex: 
+S.o.p(arr[0]);
+S.o.p(arr[1]);
+S.o.p(arr[2]);
+S.o.p(arr[3]);
+
+
+S.o.p(arr[4]); ---------------> ArrayIndexOutofBoundsException
+
+Array value reinitialization
+----------------------------------------------
+syntax: arr[3]=90;
+
+Note: If the value is not stored in a particular index and if we try to print
+we will get the respective default value
+
+To find the length of an array
+------------------------------------------
+Syntax: array_name.length;
+
+Array declaration and store the value directly
+------------------------------------------------
+Syntax: datatype[] array_name={v1,v2,v3,v4};
+
+Ex: int[] arr={10,20,30,40};
+
+Copying the value from one array to another array
+-----------------------------------------------------
+ex: int[] abb=arr;
+
+
+
+
+
+
+
+
+
+
+Ex: 
+
+//array-1
+package RCCW6;
+public class this1 
+{
+	public static void main(String[] args) 
+	{
+		int[] arr = new int[4];
+		arr[0] = 10;
+		arr[1] = 20;
+		arr[2] = 30;
+		arr[3] = 143;
+		System.out.println(arr[0]);
+		System.out.println(arr[1]);
+		System.out.println(arr[2]);
+		System.out.println(arr[3]);
+		System.out.println("array length is -----> "+arr.length);
+	}
+}
+ 
+o/p
+----
+10
+20
+30
+143
+array length is -----> 4
+
+
+
+
+
+
+//array-2
+package RCCW6;
+public class this1 
+{
+	public static void main(String[] args) 
+	{
+		int[] arr = {10,20,30,143};
+		for(int i=0;i<arr.length;i++)
+		{
+			System.out.println(arr[i]);
+		}
+		System.out.println("array length is -----> "+arr.length);
+	}
+}
+
+o/p
+----
+10
+20
+30
+143
+array length is -----> 4
+
+
+
+
+
+
+//array-3
+package RCCW6;
+public class this1 
+{
+	public static void main(String[] args) 
+	{
+		boolean[] arr = {true,true,false,false,false};
+		System.out.println("---------------");
+		System.out.println("index \t values");
+		System.out.println("---------------");
+		for(int i=0;i<arr.length;i++)
+		{
+			System.out.println(i+"\t  "+arr[i]);
+		}
+		System.out.println("array length is -----> "+arr.length);
+	}
+}
+
+o/p
+-----
+---------------
+index 	 values
+---------------
+0	  true
+1	  true
+2	  false
+3	  false
+4	  false
+array length is -----> 5
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+Method overloading - Developing multiple methods with the same name but variations in the argument list is called method overloading
+ Variations include
+    1. variation in the datatype
+    2. variation in the length of the arguments
+    3. variation in the order of the occurence of the arguments
+
+Rules: 
+------------------------
+1. Method name should be same
+2. There should be variation in the argument list
+3. There is no restriction on access specifier, modifier and return type
+
+Note: 
+1. main method can be overloaded
+2. We can overload both static and non static
+
+
+Ex1:
+
+//method overloading for static
+package RCCW6;
+public class MO 
+{
+	static void send(String x, int y)
+	{
+		System.out.println("first String then integer");
+	}
+	static void send(int c, String d)
+	{
+		System.out.println("first integer then string");
+	}
+	static void send(String s)
+	{
+		System.out.println("only string value");
+	}
+	static void send(int x)
+	{
+		System.out.println("only number");
+	}
+	public static void main(String[] args) 
+	{
+		send(123);
+		send("nanu ninna bittiralare");
+		send(123,"nanu ninna bittiralare");
+		send("nanu ninna bittiralare",123);
+	}
+}
+
+o/p
+----
+only number
+only string value
+first integer then string
+first String then integer
+
+
+
+
+
+
+2. 
+//method overloading for non static
+package RCCW6;
+public class MO 
+{
+	 void send(String x, int y)
+	{
+		System.out.println("first String then integer");
+	}
+	 void send(int c, String d)
+	{
+		System.out.println("first integer then string");
+	}
+	 void send(String s)
+	{
+		System.out.println("only string value");
+	}
+	 void send(int x)
+	{
+		System.out.println("only number");
+	}
+	public static void main(String[] args) 
+	{
+		MO o = new MO();
+		o.send(123);
+		o.send("nanu ninna bittiralare");
+		o.send(123,"nanu ninna bittiralare");
+		o.send("nanu ninna bittiralare",123);
+	}
+}
+
+
+o/p
+----
+only number 
+only string value
+first integer then string
+first String then integer
+
+
+
+3. 
+//method overloading for non static between the classes
+package RCCW6;
+class Whatsapp
+{
+	void send(String x, int y)
+	{
+		System.out.println("first String then integer");
+	}
+	 void send(int c, String d)
+	{
+		System.out.println("first integer then string");
+	}
+	 void send(String s)
+	{
+		System.out.println("only string value");
+	}
+	 void send(int x)
+	{
+		System.out.println("only number");
+	}
+}
+public class MO 
+{
+	public static void main(String[] args) 
+	{
+		Whatsapp o = new Whatsapp();
+		o.send(123);
+		o.send("nanu ninna bittiralare");
+		o.send(123,"nanu ninna bittiralare");
+		o.send("nanu ninna bittiralare",123);
+	}
+}
+
+o/p
+----
+only number 
+only string value
+first integer then string
+first String then integer
+
+
+4.
+
+//method overloading for static between the classes
+package RCCW6;
+class Whatsapp
+{
+	static void send(String x, int y)
+	{
+		System.out.println("first String then integer");
+	}
+	static void send(int c, String d)
+	{
+		System.out.println("first integer then string");
+	}
+	static void send(String s)
+	{
+		System.out.println("only string value");
+	}
+	static void send(int x)
+	{
+		System.out.println("only number");
+	}
+}
+public class MO 
+{
+	public static void main(String[] args) 
+	{
+		Whatsapp.send(123);
+		Whatsapp.send("nanu ninna bittiralare");
+		Whatsapp.send(123,"nanu ninna bittiralare");
+		Whatsapp.send("nanu ninna bittiralare",123);
+	}
+}
+
+o/p
+----
+only number
+only string value
+first integer then string
+first String then integer
+
+5.
+
+//method overloading for static between the classes
+package RCCW6;
+class Bookmyshow
+{
+	static void book(String x, int y)
+	{
+		System.out.println("first heroname then seatnumber");
+	}
+	static void book(int c, String d)
+	{
+		System.out.println("first seatnumber then moviename");
+	}
+	static void book(String s)
+	{
+		System.out.println("movie name");
+	}
+	static void book(int x)
+	{
+		System.out.println("seat number");
+	}
+}
+public class MO 
+{
+	public static void main(String[] args) 
+	{
+		Bookmyshow.book(5);
+		Bookmyshow.book("Titanic");
+		Bookmyshow.book(8,"om");
+		Bookmyshow.book("Yash",9);
+	}
+}
+
+o/p
+----
+seat number
+movie name
+first seatnumber then moviename
+first heroname then seatnumber
+
+
+Pass by value/call by value
+-------------------------------
+
+Calling or invoking the method by passing the value is called Pass by value/call by value
+
+Ex:
+
+package RCCW6;
+public class pbv 
+{
+	static void add(int y)
+	{
+		System.out.println(y);
+	}
+	public static void main(String[] args) 
+	{
+		int x=45;
+		add(x);  //passing 45 through x
+	}
+}
+
+o/p
+----
+45
+
+
+Pass by reference/call by reference
+---------------------------------------
+
+Calling or invoking the method by passing the reference variable is called Pass by reference/call by reference
+
+Ex: 
+
+package RCCW6;
+public class pbr 
+{
+	int x=20;
+	static void drink(pbr a)   //pbr a = b;
+	{
+		System.out.println(a.x);
+	}
+	static void hot(pbr z)    //pbr z = b;
+	{
+		System.out.println(z.x);
+	}
+	static void cool(pbr y)   //pbr y = b;
+	{
+		System.out.println(y.x);
+	}
+	public static void main(String[] args) 
+	{
+		pbr b = new pbr();
+		System.out.println(b.x);
+		cool(b);
+		hot(b);
+		drink(b);
+	}
+}
+
+o/p
+----
+20
+20
+20
+20
+
+2. 
+
+package RCCW6;
+class Orion
+{
+	void KGF4()
+	{
+		System.out.println("Y_R wants to watch KGF4 here");
+	}
+}
+public class BMS 
+{
+	public static void main(String[] args) 
+	{
+		Orion o = new Orion();
+		Yash.book(o);  //pass by reference
+		Radhika.book(o); //pass by reference
+	} 
+}
+class Yash
+{
+	static void book(Orion z)
+	{
+		z.KGF4();
+	}
+}
+class Radhika
+{
+	static void book(Orion d)
+	{
+		d.KGF4();
+	}
+}
+
+o/p
+----
+Y_R wants to watch KGF4 here
+Y_R wants to watch KGF4 here
+
+
+
+
+
+
+
+
+
+
+
+
+OOPS concepts of java
+---------------------------------------
+Class
+Object
+Polymorphism 
+Encapsulation 
+Abstraction 
+Inheritance
+
+
+
+Class
+--------------
+
+ - Class is the blueprint/template to create an object
+
+
+Object
+-------------------------
+ - Object is the real time entity which has its own state and behaviour
+ - State - It defines the non static variable where it can hold a data
+ - Behaviour - It defines the non static methods and the way they behave
+ - When we create an object we get both state and behaviour
+ - The object address will be stored in reference variable
+
+-----------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+Pass by value/call by value
+----------------------------
+Calling or invoking a method by passing primitive type of data is called pass by value/call by value
+
+Pass by reference/call by reference:
+-----------------------------------------------------
+Calling or invoking a method by passing reference variable is called Pass by reference/call by reference
+
+
+
+
+
+Inheritance- Inheriting the properties from one class to another class is called inheritance
+types:
+1. single level inheritance
+-------------------------------------
+//single level inheritance 
+package RCCW6;
+class Fast   //superclass
+{
+	int a=10;   //global variable
+}
+class Demo23 extends Fast  //subclass
+{
+	//int a=10;   //virtually present
+	void disp()  
+	{
+		System.out.println("nange palav beku");
+	}
+}
+public class inherit 
+{
+	public static void main(String[] args) 
+	{
+		Demo23 d = new Demo23();
+		System.out.println(d.a);
+		d.disp();
+	}
+}
+
+o/p
+----
+10
+nange palav beku
+
+
+2. multi level inheritance
+
+//multi level inheritance 
+package RCCW6;
+class Slow   //1 property
+{
+	void tends()
+	{
+		System.out.println("i want gobi manchuri");
+	}
+}
+class Fast  extends Slow    //2 properties
+{
+	//void tends()   //virtually present
+	int a=10;   
+}
+class Demo23 extends Fast    //3 properties
+{
+	//void tends()   //virtually present
+	//int a=10;   //virtually present
+	void disp()  
+	{
+		System.out.println("nange palav beku");
+	}
+}
+public class inherit 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("-------main starts------");
+		Demo23 d = new Demo23();
+		System.out.println(d.a);
+		d.disp();
+		d.tends();
+		System.out.println("-------main ends------");
+	}
+}
+
+o/p
+----
+-------main starts------
+10
+nange palav beku
+i want gobi manchuri
+-------main ends------
+
+
+3. multiple inheritance
+
+- Multiple inheritance cannot be achieved through class
+- multiple inheritance can be achieved through interface
+
+4. hierarchical inheritance
+
+//hierarchical inheritance
+package RCCW6;
+class Slow2  //superclass
+{
+	void disp1()
+	{
+		System.out.println("its too cold");
+	}
+}
+class Fast23 extends Slow2  //subclass1
+{
+	//void disp1()  //virtually present
+	int x=12;
+}
+class Demo34 extends Slow2  //subclass2
+{
+	//void disp1()  //virtually present
+	double c= 3.5;
+}
+class Fire extends Slow2  //sublcass3
+{
+	//void disp1()  //virtually present
+	String s1 = "male bartaide";
+}
+public class hier 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("object for Fast23");
+		Fast23 f = new Fast23();
+		f.disp1();
+		System.out.println(f.x);
+		System.out.println("object for Demo34");
+		Demo34 d = new Demo34();
+		d.disp1();
+		System.out.println(d.c);
+		System.out.println("object for Fire");
+		Fire f1 = new Fire();
+		f1.disp1();
+		System.out.println(f1.s1);
+	}
+}
+
+
+o/p
+----
+object for Fast23
+its too cold
+12
+object for Demo34
+its too cold
+3.5
+object for Fire
+its too cold
+male bartaide
+
+
+Assignment
+------------
+1. 
+subclass1 - Rama
+subclass2 - Lakshmana
+Superclass - Dasharatha
+
+2. 
+subclass1 - Kajal Agarwal
+subclass2 - Nisha Agarwal
+Superclass - Agarwal
+
+
+
+
+
+
+5. hybrid inheritance
+
+Assignment
+-----------
+
+
+
+
+Java provides a keyword called extends to inherit properties from one class to another class..
+-------------------
+
+Why inheritance
+-------------------
+To inherit properties from one class to another class
+For code reusability(To avoid re writing of the same code in another class)
+To make sure properties of one class/interface is not lost as we can keep it as backup in another class/interface
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+Method overriding - Developing a method in the subclass with the same name and signature as in the super class 
+		    but with different implementation in the sub class is called Method overriding
+
+Rules:
+
+1. Static cannot be overriden, only non static can be overriden
+2. There should be an is a relationship(inheritance)
+3. Method name and signature(method declaration) in the subclass should be same as in the super class
+4. As method overriding cannot be achieved using static, static cannot be inherited
+5. In case of method overriding, we will get overriden(subclass) implementation, not the superclass implementation
+
+Ex 1:
+
+package RCCW6;
+class Hotstar  //superclass
+{
+	void view()
+	{
+		System.out.println("can view movies,sports,shows");
+	}
+}
+class Disney_Hotstar extends Hotstar  //subclass
+{
+	void view()
+	{
+		System.out.println("can view movies,sports,shows along with Disney movies with English content");
+	}
+}
+public class overrrrrrrrr 
+{
+	public static void main(String[] args) 
+	{
+		Disney_Hotstar d = new Disney_Hotstar();
+		d.view();  //will get overriden implementation
+	}
+}
+
+o/p
+----
+can view movies,sports,shows along with Disney movies with English content
+
+
+
+
+Ex 2:
+
+package RCCW6;
+class Whatsapp_old  //superclass
+{
+	void status()
+	{
+		System.out.println("can upload images,videos");
+	}
+}
+class Whatsapp_new extends Whatsapp_old //subclass
+{
+	void status()
+	{
+		System.out.println("can upload images,videos,gifs,text,audio");
+	}
+}
+public class overrrrrrrrr 
+{
+	public static void main(String[] args) 
+	{
+		Whatsapp_new d = new Whatsapp_new();
+		d.status();    //will get overriden implementation
+	}
+}
+
+
+o/p
+-----
+can upload images,videos,gifs,text,audio
+
+
+
+Steps:
+
+1. To achieve method overriding, we should create an object for subclass(Disney_Hotstar) but not for superclass(Hotstar)
+2. As we want only sub class implementation and we should override superclass implementation 
+we are creating an object for subclass(Disney_Hotstar)
+3. We should use same method in the subclass(Disney_Hotstar) because we should override the method present 
+in superclass(Hotstar)
+4. If we do so, the method present in subclass(Disney_Hotstar) will override the same method present in superclass(Hotstar)
+and we will get only subclass(Disney_Hotstar) implementation but not the superclass(Hotstar) implementation because of single
+level inheritance
+
+Note:
+
+1. We use inheritance for code reusability and to get the properties to one class from other class
+2. As static cannot override/hide the instance(object) of superclass, we shouldnot use static for method overriding
+
+Super keyword
+-----------------------
+It is a keyword in java which is used in the case of method overriding where if we want superclass 
+implementation along with the subclass implementation then we should use super.methodname() in the 
+subclass(Whatsapp_new) implementation/body
+
+Note:
+
+In case of method overriding, we will get overriden(subclass) implementation, not the superclass implementation but if we use
+super keyword the we can get both superclass implementation and overriden(subclass) implementation
+
+
+
+
+
+Ex:
+
+package RCCW6;
+class Whatsapp_old  //superclass
+{
+	void status()
+	{
+		System.out.println("can upload images,videos");
+	}
+}
+class Whatsapp_new extends Whatsapp_old //subclass
+{
+	void status()
+	{
+		System.out.println("can upload images,videos,gifs,text,audio");
+		super.status();
+	}
+}
+public class overrrrrrrrr 
+{
+	public static void main(String[] args) 
+	{
+		Whatsapp_new d = new Whatsapp_new();
+		d.status();    //will get overriden implementation
+	}
+}
+
+o/p
+----
+can upload images,videos,gifs,text,audio
+can upload images,videos
+
+
+
+
+When to go for method overriding?
+------------------------------------------
+Whenever we want to provide new implementation for the old features (or) when we don't want to print the superclass
+implementation we should go for method overriding
+
+Assignment
+------------------
+1. Disney_hotstar
+2. Amazon application
+
+
+
+
+
+
+
+
+
+
+Type casting
+-------------------------------------------
+Converting from one type to another type is called type casting
+
+In type casting we have 2 types:
+
+1. Primitive typecasting
+types
+------------
+widening------>  It can be done explicitly and implicitly
+narrowing----->  It can be done explicitly 
+
+2. Class/derived typecasting  
+types
+------------ 
+Upcasting------> It can be done explicitly and implicitly
+Downcasting----->  It can be done explicitly
+
+Primitive typecasting
+---------------------------
+Converting from one primitive datatype to another primitive datatype is called type casting
+
+Widening
+----------
+Converting from smaller primitive datatype to any of its bigger primitive datatype is called as 
+widening
+It can be done explicitly and implicitly
+
+Narrowing
+----------
+Converting from bigger primitive datatype to any of its smaller primitive datatype is called as 
+narrowing
+It can be done only explicitly
+
+
+
+Class typecasting - Converting from one class to another class
+-----------------------
+Upcasting - Converting from subclass object to superclass type is called upcasting
+- It can be done both implicitly and explicitly
+
+Downcasting - Converting from superclass object to subclass type is called downcasting
+- It can be done only explicitly
+
+Note: Without performing upcasting we cannot perform downcasting
+or
+Direct downcasting is not possible
+
+
+
+Polymorphism -  An object showing different behaviour in the different stages of its life cycle 
+		is called polymorphism
+2 types
+1. compile time Polymorphism 
+2. run time
+
+Compile Time Polymorphism 
+-----------------------------------
+- Method declaration getting binded to its method definition by the compiler at the compile time based on 
+the arguments passed is called Compile Time Polymorphism(CTP)
+- Since the method declaration gets binded to its method definition at the compile time itself, it is called 
+early binding
+- Once the method declaration gets binded to its method definition, it cannot be rebinded , so it is called as
+static binding
+- Method overloading is an example for Compile Time Polymorphism 
+
+Run Time Polymorphism 
+-----------------------------------
+- Method declaration getting binded to its method definition by the JVM at the run time based on 
+object created is called Run Time Polymorphism(RTP)
+- Since the method declaration gets binded to its method definition at the run time, it is called 
+late binding
+- Once the method declaration gets binded to its method definition, it can be rebinded , so it is called as
+dynamic binding
+- Method overriding is an example for Run Time Polymorphism 
+
+Loose coupling
+-----------------
+If the enhancement is done internally, it will not affect the usage
+
+Why RTP?
+------------
+Because we can achieve 
+- Loose coupling
+- Single point of contact class
+- Generalization
+
+Note: Poly means "many", morphism means "forms"
+
+Abstract class
+------------------------------------------------
+
+Concrete method
+------------------
+Any method which has both declaration and defintion is called Concrete method
+
+Ex: 
+
+void disp()
+{
+------
+------
+}
+
+Concrete class
+-----------------
+Any class which has only concrete methods is called Concrete class
+
+Ex: 
+
+class Demo
+{
+ void disp()
+ {
+   System.out.println("disp");
+ }
+}
+
+Abstract method
+----------------
+Any method which is declared with the keyword abstract is called Abstract method
+It has no method definition/body
+
+Ex: 
+
+abstract void disp();
+
+Abstract class
+----------------
+Any class which is declared with the keyword abstract is called Abstract class
+------>If a class is having abstract method then class should be declared with abstract keyword but viceversa is not true
+
+Ex: 
+
+abstract class Demo
+{
+abstract void disp();
+}
+
+------>An abstract class can have both abstract and concrete methods 
+Ex: 
+
+abstract class Demo
+{
+ abstract void cool();
+ void fool()
+ {
+   System.out.println("fool");
+ }
+}
+
+------>We cannot create object for abstract class and interface 
+------>The class which provides implementation/body for the abstract methods is called implementation class 
+(in the subclass)
+------>We cannot create abstract method as static, final, private
+------>If any one of the abstract method is not overriden in the subclass then the subclass should be declared as 
+abstract
+------>Abstract class will have constructor
+------>Each and every class extends object class which is the supermost class in class type
+------>Through abstract class we can achieve only upto 100% abstraction
+
+Note:
+----------
+1. Class will have 3 members but class can have only 2 access specifiers i.e default/package level and public
+2. Class members(variable,method,constructor) can have all 4 access specifiers 
+i.e
+- default/package level 
+- public
+- private
+- protected
+
+
+Interface
+------------
+- Interface is a java type
+- It is by default abstract and it is pure abstract body
+- In interface we have only 2 members i.e variable and method
+- All the variables are by default static and final
+- All the methods are by default public and abstract
+- It doesnot support constructor
+- The class which provides implementation for the abstract methods is called implementation class 
+(in the subclass)
+- If any one of the abstract method is not overriden in the subclass then the subclass should be declared as 
+abstract
+- Java provides a keyword called implements to inherit the properties from interface to class
+- Java provides a keyword called extends to inherit the properties from interface to interface 
+- Each and every class extends object class which is the supermost class in class type, but interface doesnot extend
+any class, because interface itself is the super most type
+- Through interface we can achieve 100% abstraction
+- Through interface we can achieve multiple inheritance
+
+
+
+What is marker interface?
+----------------------------------------
+An empty interface is called marker interface
+
+Ex: interface Demo5
+{
+	
+}
+
+What is functional interface?
+------------------------------------------------
+If the interface consists of only one abstract method is called functional interface
+
+Ex: interface Tester5
+{
+	void disp();
+}
+
+
+
+
+----------------------------------------------------------------------------------------------------------------
+
+Abstraction - Hiding the complexity of the system and exposing only the required/essential functionalities/properties
+ to the end user is called abstraction
+
+How to achieve abstraction?
+--------------------------------
+- To achieve abstraction, declare all the essential properties in interface and provide implementation in subclass
+- Create a reference variable of interface type(Animal) and initialize that reference variable(a1) with 
+implementation class object(complexity). This is how we can achieve abstraction
+- Through interface we can achieve 100% abstraction
+- Through abstract class we can achieve only upto 100% abstraction
+
+
+Animal a1=new Dog();
+Animal a1=new Cat();
+Animal a1=new Snake();
+Animal a1=new Pig();
+Animal a1=new Elephant();
+Animal a1=new Zebra();
+Animal a1=new Horse();
+
+Package
+---------------
+- It is a folder structure which is used to store similar kind of files 
+- It should be created always in the reverse order
+- In any java file the 1st statement should always be package statement
+- To import the file from one package to another package, java produces a keyword called 'import' where the files will be present virtually
+- Import statement should always be the 2nd statement
+- We can have n number of import statements in a single java file
+- It can be any java type i.e - class,interface,enum,annotation
+- In eclipse when we develop multiple classes, which ever class is public that class is 
+eligible to have main method and that class should be the filename
+
+
+Access specifier
+-----------------------
+- It is used to restrict the access from one class to another class or from one package to another package
+- In java
+1. class can have only 2 access specifiers i.e default/package level and public
+2. Class members(variable,method,constructor) can have all 4 access specifiers 
+i.e
+- default/package level 
+- public
+- private
+- protected
+
+Private:
+--------------
+- Any member of the class declared with a keyword private is called private access specifier
+- It can be accessed only within the class
+
+Default/package level
+--------------------------
+- There is no keyword specified for this access specifier
+- Any member of the class which is not declared with a keyword/access specifier , then it is called default
+package level access specifier
+
+Default members can be accessed
+- within the class
+- within the package
+
+Protected
+-------------
+- Any member of the class declared with a keyword protected is called protected access specifier
+
+Protected members can be accessed
+- within the class
+- within the package
+- outside the package with is a relationship/inheritance
+
+
+Public
+-----------
+- Any member of the class declared with a keyword public is called public access specifier
+- It is application level
+
+Public members can be accessed
+- within the class
+- within the package
+- outside the package/any where
+
+
+
+
+
+
+
+Encapsulation(data security)
+------------------------------
+- It is one of the java oops principle
+- Java is by default encapsulated
+- We cannot declare any variable outside the class
+- We cannot have any print statement outside the class
+- Wrapping up of the data member and function member to form a single unit is called Encapsulation 
+
+How to achieve?
+-----------------
+- Declare a datamember/variable as private 
+- Restrict its direct access outside the class 
+- Provide the indirect access using public services like getters() and setters(). 
+- This is how we will achieve encapsulation where they are not mandatory but is used according to the 
+  industrial convention 
+getter() - It is used to get the value from Join class to capuuuuuuuu class
+		
+What is java bean class?
+------------------------------------
+It is  a class which supports encapsulation where wrapping of data member which is private with the function member
+using public services called getters() and setters() is called java bean class
+
+
+
+
+Java library
+-----------------------
+It is nothing but inbuilt classes and interfaces 
+we have following libraries like
+
+java libraries(packages)
+---------------------------
+java.lang
+java.util
+java.awt - (Abstract Window Toolkit) is an API to develop GUI or window-based applications in java
+java.io
+
+--------------------------------------------------            
+Object class :
+--------------------------
+1. Object class is the super most class in java
+2. Each and every class extends object class
+3. It belongs to java.lang package/library which will be imported by default
+
+Object class has the following non static methods
+
+ int hashcode()
+ boolean equals()
+ object clone()
+ string toString()
+ void notify()
+ void notifyAll()
+ void wait()
+ void finalize()
+
+
+
+toString()
+-------------------
+1. toString() is a nonstatic,non final method of object class
+2. It will be inherited to each and every class
+- It is not mandatory to write because it is virtually present
+3. Whenever we print the reference variable, toString() method will get invoked implicitly, which will return fully qualified path
+4. the signature for toString() is public string toString()
+
+
+package Javaevening;
+public class object_topicuuuuuuuu 
+{
+	public static void main(String[] args) 
+	{
+		object_topicuuuuuuuu o = new object_topicuuuuuuuu();
+		System.out.println(o.toString());
+	}
+}
+
+o/p
+----
+Javaevening.object_topicuuuuuuuu@15db9742
+
+
+
+
+
+
+
+hashCode()
+--------------------
+1. hashCode() is a nonstatic,non final method of object class
+2. It will be inherited to each and every class
+3. Whenever we invoke hashCode() method it will return/generate unique integer number called hash number based on the object address
+- It will be generated based on the hashing algorithm 
+4. the signature for hashCode() is public int hashCode()
+5. It should be invoked explicitly
+
+Ex: 1) package Javaevening;
+public class object_topicuuuuuuuu 
+{
+	public static void main(String[] args) 
+	{
+		object_topicuuuuuuuu o = new object_topicuuuuuuuu();
+		System.out.println(o.hashCode());  //will return/generate unique integer number called hash number
+		object_topicuuuuuuuu o1 = new object_topicuuuuuuuu();
+		System.out.println(o1.hashCode());
+		
+	}
+}
+
+o/p
+------
+366712642
+1829164700
+
+
+2) package Javaevening;
+public class object_topicuuuuuuuu 
+{
+	public int hashCode()
+	{
+		return 143;
+	}
+	public static void main(String[] args) 
+	{
+		object_topicuuuuuuuu o = new object_topicuuuuuuuu();
+		System.out.println(o.hashCode());
+	}
+}
+
+o/p
+----
+143
+
+
+
+
+equals()
+---------
+1. equals() is a nonstatic,non final method of object class
+2. It will be inherited to each and every class
+3. It is used to compare the object address
+4. The signature of equals() is public boolean equals()
+
+package Javaevening;
+public class object_topicuuuuuuuu 
+{
+	public static void main(String[] args) 
+	{
+		object_topicuuuuuuuu o = new object_topicuuuuuuuu();
+		System.out.println(o);
+		object_topicuuuuuuuu o1 = new object_topicuuuuuuuu();
+		System.out.println(o1);
+		System.out.println(o.equals(o1));
+	}
+}
+
+o/p
+-----
+Javaevening.object_topicuuuuuuuu@15db9742
+Javaevening.object_topicuuuuuuuu@6d06d69c
+false
+
+package Javaevening;
+public class object_topicuuuuuuuu 
+{
+	public static void main(String[] args) 
+	{
+		object_topicuuuuuuuu o = new object_topicuuuuuuuu();
+		System.out.println(o);
+		object_topicuuuuuuuu o1=o;
+		System.out.println(o1);
+		System.out.println(o.equals(o1));
+	}
+}
+
+
+o/p
+--------
+Javaevening.object_topicuuuuuuuu@15db9742
+Javaevening.object_topicuuuuuuuu@15db9742
+true
+
+
+
+ Assignment
+-------------------
+ object clone()
+ void notify()
+ void notifyAll()
+ void wait()
+ void finalize()
+
+
+
+
+
+String class:
+--------------------
+1. final class
+2. belongs to java.lang package
+3. we can create object for string class in 2 ways
+	without new operator ---> 
+
+                                    String s1="Hello"; ---> It will not allow duplicates 
+	with new operator ---> 
+
+                                    String s1=new String("Hello"); ---> It will allow duplicates
+4. String pool area is further divided in to 2 parts
+			Constant pool area
+			Non Constant pool area
+5. Any string object which is created without new operator will be stored in constant pool area
+6. Any string object which is created with new operator will be stored in non constant pool area
+7. String class is immutable
+
+
+what is immutable?
+------------------------
+It will not change the state or value of the object
+
+
+why String class is immutable?
+----------------------------------
+when multiple reference variables(s1,s2,s3,s4) are pointing to a single object(cool) and if any one of the r.variables(s4) is 
+derefenced then it will not affect other r.variables(s1,s2,s3). 
+
+This is why it is immutable.
+
+
+
+
+	Equals() in string class --- > to compare object values/string values
+        equals() in object class --- > to compare object address
+
+Note: Any operation done with the string object will be stored in non constant pool area.
+----------------------------------------------------------------------------------------------------------	
+
+ Assignment
+----------------------------
+String class methods are
+-----------------------------
+- charAt() - 
+- contains() 
+- equals()
+- equalsIgnoreCase()
+- toUpperCase()
+- toLowerCase()
+- concat()
+- subSequence(int arg0, int arg1)
+- substring(start_index)
+- substring(start_index,end_index)
+- split()
+- toCharArray()
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+Exception handling
+------------------------------------------------
+It is an event triggered during the execution of the program which interrupts the execution and stops the execution abruptly or suddenly.
+Handling this event by using try and catch or throws is called Exception handling
+
+It is an abnormal statement which terminates the program which we have to handle using
+1. try and catch
+2. throws
+
+All the abnormal statements should be developed in the try block and have to be addressed in the catch block
+
+Exceptions are of 2 types:
+1. compile time exception
+2. run time exception
+
+compile time exception
+-----------------------------------
+ - Any exception which is caught at the compile time by the compiler is called compile time exception
+ - All the compile time exceptions can be addressed by using try catch or throws
+ - It is also called as checked exception
+ - CTEs are user defined
+ - For CTE we should create separate class and have constructor
+ - Programmer should handle/address the CTE at compile time itself
+
+
+Ex: 
+
+package part_2;
+public class one 
+{
+	static void submit() throws ShaadiException //used to propagate the exception from the created method to main method
+	{
+		int age = 15;
+		if(age>=21)
+		{
+			System.out.println("he/she will lead a happy life");
+		}
+		else
+		{
+			throw new ShaadiException("invalid age");  //create an user defined exception
+		}
+	}
+	public static void main(String[] args) 
+	{
+		try
+		{
+			submit();
+		}
+		catch(ShaadiException e)
+		{
+			System.out.println(e.getMessage());
+		}
+	}
+}
+
+class ShaadiException extends Exception
+{
+	String msg;   //msg=invalid age
+	ShaadiException(String msg)  //msg=invalid age
+	{
+		this.msg=msg;
+	}
+	public String getMessage()
+	{
+		return msg;
+	}
+}
+
+o/p
+----
+invalid age
+
+
+Explaination for CTE program 1
+----------------------------------
+1. Create a static method(submit) and call it in main method 
+2. In the submit method after certain statements while checking the condition if the condition is false create/invoke 
+a user defined exception with a message in it i.e throw new ShaadiException("invalid age"); 
+which will check whether throws is developed in method declaration of submit method
+3. throws keyword is used to propagate/carry the exception from submit method to main method
+4. develop the submit() in try block
+5. use catch block for addressing the exception(don't write anything within catch block)
+6. As ShaadiException is not inbuilt/predefined, a separate class has to be created by the user as it is user defined and 
+inherit the properties of Exception to get all the properties
+7. Create a constructor with same name as a classname and have a parameter to receive the "invalid age" message 
+i.e ShaadiException(String msg) 
+8. Constructor gets invoked when the object is created 
+i.e new ShaadiException("invalid age");
+9. Pass the value "invalid age" and store it in local variable msg of String datatype
+10. As local variable and global variable names are same use this keyword and copy the String value "invalid age" into 
+global variable msg
+11. To get the value "invalid age" present in global variable msg, create a nonstatic method getMessage() ---- encapsulation concept
+12. Return the msg string value "invalid age" to the catch block in main method in class one from class ShaadiException
+13. To access the nonstatic method getMessage() into catch block in main method in class one use the reference variable(e)
+and access
+reference_variable.methodname()
+i.e e.getMessage()
+Put this statement directly in S.o.p as return type is String
+
+
+Ex 2: 
+public class exception 
+{
+	static void purchase() throws FlippuuuuException
+	{
+		int pant = 4999;
+		if(pant>5000)
+		{
+			System.out.println("discount of 1000 rupees");
+		}
+		else
+		{
+			throw new FlippuuuuException("no discount");
+		}
+			
+	}
+	public static void main(String[] args) 
+	{
+		try
+		{
+			purchase();
+		}
+		catch(FlippuuuuException e)
+		{
+			System.out.println(e.getMessage());
+		}
+	}
+}
+class FlippuuuuException extends Exception 
+{
+	String message;
+	FlippuuuuException(String message)
+	{
+		this.message=message;
+	}
+	public String getMessage()
+	{
+		return message;
+	}
+}
+
+o/p
+------
+no discount
+
+
+
+
+
+
+
+
+
+
+
+
+run time exception
+-----------------------------------
+ - Any exception which is not caught at the compile time and found at the run time 
+is called runtime exception
+ - All the run time exceptions can be addressed by using try catch or throws
+ - run time exception should be addressed at the run time only
+ - It is also called as unchecked exception
+
+1. //ArrayIndexOutOfBoundsException(one try and one catch)
+package part_2;
+public class one 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("-------main starts--------");
+		int[] arr={2,3,4,5};
+		try
+		{
+			System.out.println(arr[6]);
+		}
+		catch(ArrayIndexOutOfBoundsException e)
+		{
+			System.out.println("handled");
+		}
+		System.out.println("-------main ends--------");
+	}
+}
+
+2. 
+//ArithmeticException(one try and two catch)
+package part_2;
+public class one 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("-------main starts--------");
+		try
+		{
+			int i=1/0;  //throw new ArithmeticException
+		}
+		catch(ArrayIndexOutOfBoundsException e)
+		{
+			System.out.println("hiiiiiiiiiii");
+		}
+		catch(ArithmeticException e)
+		{
+			System.out.println("hlooooooo");
+		}
+		System.out.println("-------main ends--------");
+	}
+}
+
+o/p
+------
+-------main starts--------
+hlooooooo
+-------main ends--------
+
+3. package part_2;
+public class one 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("-------main starts--------");
+		int[] arr={2,3,4,5};
+		
+		try
+		{
+			System.out.println(arr[8]);
+			System.out.println("nanu");
+		}
+		catch(Exception e)
+		{
+			System.out.println("hiiiiiiiiiii");
+		}
+		
+		System.out.println("-------main ends--------");
+	}
+}
+
+
+
+
+1. 
+public class Sample1 {
+	public static void main(String[] args) {
+		System.out.println("***Main Starts****");
+		try
+		{
+			int i=1/0;
+		}
+		catch(ArithmeticException e)
+		{
+			System.out.println("handled.......");
+		}
+			System.out.println("***Main Ends***");
+	}
+
+}
+
+2. 
+
+public class Sample2 {
+	public static void main(String[] args) {
+		System.out.println("*Main Starts");
+		int[] a={10,20,30,40};
+		try
+		{
+		System.out.println(a[9]);
+		}
+		catch(ArrayIndexOutOfBoundsException e)
+		{
+			System.out.println("Handled");
+		}
+		System.out.println("MAin ENds");
+	}
+
+}
+
+3.
+public class Sample3 {
+	public static void main(String[] args) {
+		Sample3 s3=null;
+		System.out.println("Main Starts");
+		try
+		{
+		System.out.println(s3.hashCode());
+		}
+		catch(NullPointerException e)
+		{
+			System.out.println("handled");
+		}
+		System.out.println("Main Ends");
+	}
+
+}
+
+4. 
+public class Sample4 {
+	public static void main(String[] args) {
+		System.out.println("****Main Starts****");
+		try
+		{
+			int i=1/0;
+			System.out.println("hi");
+		}
+		catch(ArithmeticException e)
+		{
+			System.out.println("handled....");
+		}
+		System.out.println("****Main Ends****");
+	}
+}
+
+5.
+public class Sample5 {
+	public static void main(String[] args) {
+		System.out.println("****Main Starts****");
+		try
+		{
+			int i=1/0;
+		}
+		catch(ArrayIndexOutOfBoundsException e)
+		{
+			System.out.println("Caught...");
+		}
+		catch(ArithmeticException e)
+		{
+			System.out.println("Handled....");
+		}
+		System.out.println("*****Main ends****");
+	}
+
+
+}
+6. 
+public class Sample6 {
+	
+	public static void main(String[] args) {
+		try
+		{
+			int i=1/0;
+		}
+		catch(Exception e)
+		{
+			System.out.println("handled...");
+		}
+		/*catch(ArithmeticException e)
+		{
+			System.out.println("caught...");
+		}*/
+	}
+
+}
+
+7.
+public class Sample7 {
+	public static void main(String[] args) {
+		try
+		{
+			int i=18/3;
+			int[] arr={10,20,30,40};
+			try
+			{
+				System.out.println(arr[i]);
+			}
+			catch(ArithmeticException e)
+			{
+				System.out.println("handled...");
+			}
+		}
+		catch(ArithmeticException e)
+		{
+			System.out.println("handled...");
+		}
+	}
+
+}
+
+8.
+public class Sample8 {
+	public static void main(String[] args) {
+		System.out.println("***main Starts****");
+		try
+		{
+			int i=1/0;
+		}
+		catch(ArrayIndexOutOfBoundsException e)
+		{
+			System.out.println("handled");
+		}
+		finally
+		{
+			System.out.println("I am finally block");
+		}
+	}
+
+}
+
+9.
+public class Sample9 {
+	public static void main(String[] args) {
+		System.out.println("Main Starts");
+		try
+		{
+			int i=1/0;
+		}
+		finally
+		{
+			System.out.println("I am finally block");
+		}
+	}
+}
+
+10. Checked exception
+-----------------------------------------------------------------
+class MarriageException extends Exception
+{
+	String m;
+	public MarriageException(String m) {
+		this.m=m;
+	}
+	public String getM()
+	{
+		return m;
+	}
+}
+public class Shadidotcom {
+	static void submit() throws MarriageException
+	{
+		int age=15;
+		if(age>=21)
+		{
+			System.out.println("happy life");
+		}
+		else
+		{
+			throw new MarriageException("Invalid data");
+		}
+	}
+	public static void main(String[] args) {
+		System.out.println("***Main Starts****");
+		try{
+			submit();
+		}
+		catch(MarriageException e)
+		{
+			System.out.println(e.getM());
+		}
+		System.out.println("***Main Ends***");
+	}
+
+}
+ --------------------------------------------------------------------------------
+Note: Throw:
+------------------
+- It is used to throw the exception of Throwable type
+- It will be written internally for RTE
+
+Note: 
+1. CTE occurs when we have something between try and catch block
+2. There may be multiple catch blocks for 1 try block but only one catch block
+will be exceuted
+3. A reference variable(e) can hold object address and null
+4. Once the exception occurs further statements of the try block will not get exceuted
+5. For one try block there should be one catch block mandatorily
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Finally block
+-----------------------------
+It is a block in exception handling which will get executed mandatorily even though exception
+is adressed or not
+
+We can develop finally block in 2 ways
+1. try catch finally
+2. try finally
+
+
+
+
+Stack unwinding
+-----------------------------------
+If any exception occurs in any one of the method and if it is not adressed
+which will propagate the excpetion to the method which inturn reaches main method
+and main method propagates to JVM. 
+JVM does not have any handler(try-catch and throws) and the stack will get destroyed
+Hence it is called Stack unwinding
+
+Error: 
+-------------------------------------
+Error is a class which belongs to java.lang package.
+It occurs due to system configuration
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+Constructor overloading
+---------------------------------------------------------------------
+Developing multiple constructors with the same name but variations in the argument list is 
+called Constructor overloading
+
+Variations include
+
+- variation in the datatype
+- variation in the length of the arguments
+- variation in the order of occurence of arguments
+
+This calling statement   -----> this()
+-------------------------------------------
+- It is used in the case of constructor overloading
+- It is used to call from one constructor to another constructor within the class
+- It should be the first statement inside the constructor
+- We cannot develop 2 this calling statements in the single constructor 
+- It should be written explicitly
+
+
+
+
+
+
+
+
+
+Ex:
+
+package co;
+class Hiiiiiiiii
+{
+	Hiiiiiiiii(int d)
+	{
+		System.out.println(d);
+	}
+	Hiiiiiiiii(String h)
+	{
+		this(7);
+		System.out.println(h);
+	}
+	Hiiiiiiiii(int a,String s)
+	{
+		this("Iloveyou");
+		System.out.println(a+" "+s);
+	}
+	Hiiiiiiiii(String y, int x)
+	{
+		this(19,"Java");
+		System.out.println(y+" "+x);
+	}
+}
+public class Mainclass 
+{
+	public static void main(String[] args) 
+	{
+		new Hiiiiiiiii("Javaiseasy",143);
+	}
+}
+
+
+o/p
+----
+7
+Iloveyou
+19 Java
+Javaiseasy 143
+
+Explaination
+----------------
+1. Create an object to invoke a constructor of string-integer parameters
+2. constructor with string-integer parameters gets invoked and Javaiseasy will be stored in y, 143 in x
+3. In the constructor the 1st statement is this() which will invoke the integer-String parameters constructor and values get stored
+4. In the constructor the 1st statement is this() which will invoke the String parameters constructor and value gets stored
+5. In the constructor the 1st statement is this() which will invoke the integer parameters constructor and value gets stored
+6. In the constructor with integer parameter s.o.p will get executed
+7. In the constructor with string parameter s.o.p will get executed(this() is neglected as it is already invoked)
+8. In the constructor with integer-string parameter s.o.p will get executed(this() is neglected as it is already invoked)
+9. In the constructor with string-integer parameter s.o.p will get executed(this() is neglected as it is already invoked)
+
+
+
+Super calling statement    ----> super()
+--------------------------------------------------
+- It is used in the case of inheritance
+- It is used to call from one constructor to another constructor between the classes
+- It can be written implicitly or explicitly
+- It should be the first statement inside the constructor
+- We cannot develop 2 super calling statements in the single constructor between the classes
+
+Ex 1:
+
+package collection;
+class Halwa 
+{
+	Halwa(String x)
+	{
+		System.out.println(x);
+	}
+}
+class Jamoon extends Halwa
+{
+	Jamoon(double y)
+	{
+		super("nange ninu beda");
+		System.out.println(y);
+	}
+}
+class Kajjaya extends Jamoon
+{
+	Kajjaya(int a,String c)  //int a=32;
+	{
+		super(17.34);
+		System.out.println(a+" "+c);
+	}
+}
+public class superc 
+{
+	public static void main(String[] args) 
+	{
+		new Kajjaya(32,"hi");
+	}
+}
+
+o/p
+----
+nange ninu beda
+17.34
+32 hi
+
+Ex 2: 
+
+package collection;
+class Demo  //5
+{
+	Demo()   //6
+	{
+		System.out.println("nanu bande");  //7
+	}
+}
+class Sample extends Demo  //4
+{
+	//default constructor will be present
+}
+class Tester extends Sample  //3
+{
+	Tester()  //2
+	{
+		System.out.println("Hi");  //8
+	}
+}
+public class one2 
+{
+	public static void main(String[] args) 
+	{
+		new Tester();  //1
+	}
+}
+
+
+o/p
+----
+nanu bande
+Hi
+
+
+
+
+
+
+
+
+Why multiple inheritance is not possible in java through classes?
+--------------------------------------------------------------------------------------------------------------
+- We cannot develop 2 super calling statements in the sub class constructor because super calling should be first 
+inherited
+- Due to diamond problem
+i.e each and every class extends object class which is the supermost class, will have the ambuguity(confusion) from which 
+super class it should inherit the properties
+- We can achieve multiple inheritance through interface
+- Interface does not support constructor
+Hence we don't develop 2 supercalling statements in the subclass constructor
+- Interface doesnot extend object class as Interface itself is the supermost type
+By this we can overcome diamond problem 
+
+Write the illustrated diagram here
+
+
+Collection
+
+
+Collection is an unified architecture which consist of classes and interface
+
+all the collection classes and interface belongs to java.util package
+
+
+Why collection?
+------------------
+in order to overcome the drawback of array we go for collection
+
+* in collection we can store homogeneous and heterogenous type of data and size is dynamic
+
+* it increases its size by 50%
+
+* the default capacity is 10 
+------------------------------------------------------------------------------------
+in collection we have 3 sub interfaces 
+
+   # List
+   # Queue
+   # Set
+
+Methods present in collection(ArrayList)
+--------------------------------------------
+
+import java.util.ArrayList;
+class ArrayList
+{
+void add(object obj)
+void add(int index,object obj)
+void addAll(collection c)
+void addAll(int index,collection c)
+void remove()
+void removeAll()
+void retainAll()
+void size()
+void get(int index)
+void contains()
+}
+
+
+
+
+ List ->
+
+   list is an interface whenever we want to store the elements upon index and allow duplicates then we should go for 
+   List type of collection
+ 
+   features of List -->
+
+  1) size is dynamic 
+  2) we can store heterogenous type of data
+  3) it is index'd type of collection
+  4) it allow's duplicate's
+  5) it follow's order of insertion
+  6) it allow's null
+  7) since it is index'd type of collection we can fetch the elements upon index radomly
+  8) it is not auto sorted
+ 
+    list has three subclass's 
+    1) ArrayList
+    2) Vector
+    3) LinkedList
+
+   1) ArrayList :
+        
+    features of ArrayList :
+     1) size is dynamic 
+  2) we can store heterogenous type of data
+  3) it is indexed type of collection
+  4) it allows duplicates
+  5) it follows order of insertion
+  6) it allow's null
+  7) since it is index'd type of collection we can fetch the elements upon index radomly
+  8) it is not auto sorted
+  9) it increases its size by 50%
+  10) it is not synchronized
+  11) since its not synchronized the performance is fast
+
+Ex:
+1. 
+//void add(object obj) - to add/insert the elements into collection
+package collection;
+
+import java.util.ArrayList;
+
+public class collection 
+{
+	public static void main(String[] args) 
+	{
+		ArrayList l1 = new ArrayList();
+		l1.add(10);
+		l1.add(23.45);
+		l1.add("I love you");
+		l1.add(10);
+		l1.add('S');
+		System.out.println(l1);
+	}
+}
+
+o/p
+----
+[10, 23.45, I love you, 10, S]
+
+2. 
+//void add(int index,object obj)
+package collection;
+
+import java.util.ArrayList;
+
+public class collection 
+{
+	public static void main(String[] args) 
+	{
+		ArrayList l1 = new ArrayList();
+		l1.add(10);
+		l1.add(23.45);
+		l1.add("I love you");
+		l1.add(10);
+		l1.add('S');
+		l1.add(1, "hello");  //based on index add the data
+		System.out.println(l1);
+	}
+}
+
+o/p
+-------
+[10, hello, 23.45, I love you, 10, S]
+
+3. 
+//void addAll(collection c)
+package collection;
+
+import java.util.ArrayList;
+
+public class collection 
+{
+	public static void main(String[] args) 
+	{
+		ArrayList l1 = new ArrayList();
+		l1.add(10);
+		l1.add(20);
+		l1.add(30);
+		
+		ArrayList l2 = new ArrayList();
+		l2.add('A');
+		l2.add('B');
+		l2.add('C');
+		
+		System.out.println("----before----");
+		System.out.println("l1---->"+l1);
+		System.out.println("l2---->"+l2);
+		l1.addAll(l2);  //append l2 data with l1
+		System.out.println("----after----");
+		System.out.println("l1---->"+l1);
+		System.out.println("l2---->"+l2);
+	}
+}
+
+o/p
+------
+----before----
+l1---->[10, 20, 30]
+l2---->[A, B, C]
+----after----
+l1---->[10, 20, 30, A, B, C]
+l2---->[A, B, C]
+
+4.
+
+//void addAll(int index, collection c)
+package collection;
+
+import java.util.ArrayList;
+
+public class collection 
+{
+	public static void main(String[] args) 
+	{
+		ArrayList l1 = new ArrayList();
+		l1.add(10);
+		l1.add(20);
+		l1.add(30);
+		
+		ArrayList l2 = new ArrayList();
+		l2.add('A');
+		l2.add('B');
+		l2.add('C');
+		
+		System.out.println("----before----");
+		System.out.println("l1---->"+l1);
+		System.out.println("l2---->"+l2);
+		l1.addAll(1,l2);  //append l2 data with l1 based on specified index
+		System.out.println("----after----");
+		System.out.println("l1---->"+l1);
+		System.out.println("l2---->"+l2);
+	}
+}
+
+
+o/p
+------
+----before----
+l1---->[10, 20, 30]
+l2---->[A, B, C]
+----after----
+l1---->[10, A, B, C, 20, 30]
+l2---->[A, B, C]
+
+
+5. 
+
+//void remove()
+package collection;
+
+import java.util.ArrayList;
+
+public class iiiiiiii 
+{
+	public static void main(String[] args) 
+	{
+		ArrayList l1=new ArrayList();
+		l1.add("bonda");
+		l1.add("bajji");
+		l1.add("paisa");
+		l1.add("laddu");
+		System.out.println("-------before-------");
+		System.out.println(l1);
+		l1.remove("paisa");   //remove object directly
+		System.out.println("-------after-------");
+		System.out.println(l1);
+		l1.remove(0);  //remove object based on index
+		System.out.println("-------after-------");
+		System.out.println(l1);
+	}
+}
+
+o/p
+----
+-------before-------
+[bonda, bajji, paisa, laddu]
+-------after-------
+[bonda, bajji, laddu]
+-------after-------
+[bajji, laddu]
+
+6. 
+
+//void removeAll()
+package collection;
+
+import java.util.ArrayList;
+
+public class collection 
+{
+	public static void main(String[] args) 
+	{
+		ArrayList l1 = new ArrayList();
+		l1.add(10);
+		l1.add(20);
+		l1.add(30);
+		l1.add(40);
+		ArrayList l2 = new ArrayList();
+		l2.add(143);
+		l2.add(68);
+		l2.add(50);
+		l2.add(30);
+		l2.add(40);
+		System.out.println("----before----");
+		System.out.println("l1---->"+l1);
+		System.out.println("l2---->"+l2);
+		l1.removeAll(l2);  //remove all the duplicates of l1
+		System.out.println("----after----");
+		System.out.println("l1---->"+l1);
+		System.out.println("l2---->"+l2);
+	}
+}
+
+
+o/p
+------
+----before----
+l1---->[10, 20, 30, 40]
+l2---->[143, 68, 50, 30, 40]
+----after----
+l1---->[10, 20]
+l2---->[143, 68, 50, 30, 40]
+
+
+7. //void retainAll()
+package collection;
+
+import java.util.ArrayList;
+
+public class collection 
+{
+	public static void main(String[] args) 
+	{
+		ArrayList l1 = new ArrayList();
+		l1.add(10);
+		l1.add(20);
+		l1.add(30);
+		l1.add(40);
+		ArrayList l2 = new ArrayList();
+		l2.add(143);
+		l2.add(68);
+		l2.add(50);
+		l2.add(30);
+		l2.add(40);
+		System.out.println("----before----");
+		System.out.println("l1---->"+l1);
+		System.out.println("l2---->"+l2);
+		l1.retainAll(l2);  //retains all the duplicates of l1
+		System.out.println("----after----");
+		System.out.println("l1---->"+l1);
+		System.out.println("l2---->"+l2);
+	}
+}
+
+o/p
+-----
+----before----
+l1---->[10, 20, 30, 40]
+l2---->[143, 68, 50, 30, 40]
+----after----
+l1---->[30, 40]
+l2---->[143, 68, 50, 30, 40]
+
+
+8. 
+
+//void size()
+package collection;
+
+import java.util.ArrayList;
+
+public class collection 
+{
+	public static void main(String[] args) 
+	{
+		ArrayList l1 = new ArrayList();
+		l1.add(10);
+		l1.add(20);
+		l1.add(30);
+		l1.add(40);
+		System.out.println("size is----> "+l1.size()); //to find the length of elements in collection
+	}
+}
+
+
+o/p
+----
+size is----> 4
+
+9.  
+
+//void get(int index)
+package collection;
+import java.util.ArrayList;
+public class collection 
+{
+	public static void main(String[] args) 
+	{
+		ArrayList l1 = new ArrayList();
+		l1.add(10);
+		l1.add(20);
+		l1.add(30);
+		l1.add(40);
+		for(int i=0;i<l1.size();i++)
+		{
+			System.out.println(l1.get(i));  //to get the elements of collection one by one
+		}
+	}
+}
+
+o/p
+-----
+10
+20
+30
+40
+
+Collections
+--------------
+It is a class used for list type of collection which consists of methods like sort and binary search etc....
+i.e
+Collections.sort(list);
+It belongs to java.util package
+
+Ex: 
+
+package collection;
+import java.util.ArrayList;
+import java.util.Collections;
+public class collection 
+{
+	public static void main(String[] args) 
+	{
+		ArrayList l1 = new ArrayList();
+		l1.add(10);
+		l1.add(50);
+		l1.add(30);
+		l1.add(40);
+		System.out.println("------before--------");
+		System.out.println(l1);
+		Collections.sort(l1);
+		System.out.println("------after--------");
+		System.out.println(l1);
+	}
+}
+
+
+o/p
+-----
+------before--------
+[10, 50, 30, 40]
+------after--------
+[10, 30, 40, 50]
+
+
+10.
+
+//void contains(object obj)
+package collection;
+import java.util.ArrayList;
+public class collection 
+{
+	public static void main(String[] args) 
+	{
+		ArrayList l1 = new ArrayList();
+		l1.add("bangalore");
+		l1.add("pungnur");
+		l1.add("hyderabad");
+		l1.add("mysore");
+		if(l1.contains("mysore"))
+		{
+			System.out.println("ide kanroooooooo");
+		}
+		else
+		{
+			System.out.println("illa machaaaaaaaa");
+		}
+	}
+}
+
+
+o/p
+-----
+ide kanroooooooo
+
+11. 
+
+//vector-capacity
+package collection;
+import java.util.ArrayList;
+import java.util.Vector;
+public class collection 
+{
+	public static void main(String[] args) 
+	{
+		Vector v = new Vector();
+		v.add(20);
+		v.add(30);
+		v.add(40);
+		System.out.println(v.size());
+		System.out.println(v.capacity());  //to get to know the default capacity of collection
+	}
+}
+
+o/p
+-----
+3
+10
+
+//WAP to print arraylist in reverse order
+package hi;
+import java.util.ArrayList;
+public class hi
+{
+	public static void main(String[] args) 
+	{
+		ArrayList l1 = new ArrayList();
+		l1.add(34);
+		l1.add("out");
+		l1.add('A');
+		l1.add(24.65);
+		l1.add(45.34f);
+		for(int i=l1.size()-1;i>=0;i--)
+		{
+			System.out.println(l1.get(i));
+		}
+	}
+}
+
+o/p
+----
+45.34
+24.65
+A
+out
+34
+
+
+2. 
+//WAP to print alternative elements of arraylist in reverse order
+package hi;
+import java.util.ArrayList;
+public class hi
+{
+	public static void main(String[] args) 
+	{
+		ArrayList l1 = new ArrayList();
+		l1.add(34);
+		l1.add("out");
+		l1.add('A');
+		l1.add(24.65);
+		l1.add(45.34f);
+		for(int i=l1.size()-1;i>=0;i=i-2)
+		{
+			System.out.println(l1.get(i));
+		}
+	}
+}
+
+o/p
+---
+45.34
+A
+34
+
+
+ArrayList
+--------------------------------------------------------------------
+
+In ArrayList class the constructor is overloaded
+1. Arraylist constructor without parameter ----> [ArrayList()]
+This constructor gets invoked whenever we create an object for ArrayList which will initialize
+the default capacity as 10.
+2. ArrayList (int initialcapacity): It will initialize the capacity as per the user input
+In collection the size is going to increase by 50% with the formula
+capacity: currentcapacity*(3/2)+1
+3. ArrayList(collection c): It helps to copy from one collection to another collection
+
+
+   2) Vector :
+        
+        features of Vector :
+     1) size is dynamic 
+  2) we can store heterogenous type of data
+  3) it is index'd type of collection
+  4) it allow's duplicate's
+  5) it follow's order of insertion
+  6) it allow's null
+  7) since it is index'd type of collection we can fetch the elements upon index radomly
+  8) it is not auto sorted
+  9) it increases its size by 100%
+  10) it is synchronized
+  11) since its synchronized the performance is slow
+
+  3) LinkedList
+     
+It is a class which has dual property ----> LinkedList inherits the properties from both list and queue interfaces
+So, we can use get(int index)..
+Along with that we can use 2 other methods of Queue interfaces
+ie: 1. peek()-----> It will retrieve/fetch the topmost element of the List but doesnot remove it
+    2. poll()-----> It will retrieve/fetch the topmost element of the List removes it, thereby the size gets decreased
+
+
+
+       whenever we need proper order of insertion then we should go for LinkedList, it has dual properties 
+  i.e it inherits from both  LIST AND QUEUE
+
+   features of LinkedList:
+     1) size is dynamic 
+  2) we can store heterogenous type of data
+  3) it is index'd type of collection
+  4) it allow's duplicate's
+  5) it follow's order of insertion
+  6) it allow's null
+  7) since it is index'd type of collection we can fetch the elements upon index radomly
+  8) it is not auto sorted
+  9) it increases its size by 50%
+
+
+
+  Queue  :   Queue is an interface whenever we want follow general queue then we should for queue type of collection
+
+   in Queue we have 
+    1) LinkedList 
+    2) PriorityQueue  :  it is a class which implements Queue interface which belongs to java.util package
+
+   features of priority queue :
+     1) size is dynamic 
+  2) we cannot store heterogenous type of data
+  3) it is not index'd type of collection
+  4) it allow's duplicate's
+  5) it is auto sorted(partially)
+  6) it doesn't allow's null
+  7) since it is not index'd type of collection we can't fetch the elements upon index randomly
+
+
+  Set :  set is an interface which helps to store the data not upon index and doesn't allow duplicates
+
+   in set we have 
+   1) HashSet 
+   2) LinkedHashSet
+   3) TreeSet
+
+   features of Set :
+   1) size is dynamic 
+  2) we can store heterogenous type of data
+  3) it is not index'd type of collection
+  4) it doesn't allow's duplicate's
+  5) it allow's null
+  7) since it is not index'd type of collection we can't fetch the elements upon index radomly
+  9) it increases its size by 50%
+
+   1.  HashSet : it is a class which belongs to java. util package
+
+      features of HashSet :
+  1) size is dynamic 
+  2) we can store heterogenous type of data
+  3) it is not index'd type of collection
+  4) it doesn't allow's duplicate's
+  5) it allow's null
+  6) since it is not index'd type of collection we can't fetch the elements upon index radomly
+  7) it increases its size by 50%
+  8) it doesn't follow order of insertion
+  
+//hashset
+package collection;
+import java.util.HashSet;
+public class iiiiiiii 
+{
+	public static void main(String[] args) 
+	{
+		HashSet l1=new HashSet();  //will not follow order of insertion 
+		l1.add(34);
+		l1.add(3.9);
+		l1.add('A');
+		l1.add("I hate you");
+		l1.add(34);
+		System.out.println("l1----> " +l1);
+	}
+}
+
+o/p
+----
+l1----> [A, 34, I hate you, 3.9]
+
+
+  2. LinkedHashSet :  it is a class which belongs to java. util package
+
+      features of LinkedHashSet :
+  1) size is dynamic 
+  2) we can store heterogenous type of data
+  3) it is not index'd type of collection
+  4) it doesn't allow's duplicate's
+  5) it allow's null
+  6) since it is not index'd type of collection we can't fetch the elements upon index radomly
+  7) it increases its size by 50%
+  8) it  follow order of insertion
+  
+
+//linkedhashset
+package collection;
+import java.util.LinkedHashSet;
+public class iiiiiiii 
+{
+	public static void main(String[] args) 
+	{
+		LinkedHashSet l1=new LinkedHashSet();//will follow order of insertion and will not
+		//allow the duplicates 
+		l1.add(34);
+		l1.add(3.9);
+		l1.add('A');
+		l1.add('A');
+		l1.add("I hate you");
+		l1.add(34);
+		System.out.println("l1----> " +l1);
+	}
+}
+
+o/p
+----
+l1----> [34, 3.9, A, I hate you]
+3. TreeSet:  it is a class which belongs to java. util package
+
+      features of TreeSet :
+  1) size is dynamic 
+  2) we cannot store heterogenous type of data
+  3) it is not index'd type of collection
+  4) it doesn't allow's duplicate's
+  5) it allow's null
+  6) since it is not index'd type of collection we can't fetch the elements upon index radomly
+  7) it increases its size by 50%
+  8) it  is completely auto sorted.
+
+
+
+//treeset
+package collection;
+import java.util.TreeSet;
+public class iiiiiiii 
+{
+	public static void main(String[] args) 
+	{
+		TreeSet l1=new TreeSet(); //completely sorted and willnot allow duplicates
+		l1.add(34);
+		l1.add(39);
+		l1.add(45);
+		l1.add(2);
+		l1.add(34);
+		System.out.println("l1----> " +l1);
+	}
+}
+
+
+o/p
+----
+l1----> [2, 34, 39, 45]
+
+
+
+for each loop
+------------------
+If we want to traverse set which is not indexed then we can go for  for each loop
+- It is used to print the elements one by one(without using index) 
+
+Syntax:
+--------
+for(array_type/datatype variable_name : array_name/collection/variable_name)
+{
+----
+----
+}
+
+Ex:
+
+1. public class iiiiiiii 
+{
+	public static void main(String[] args) 
+	{
+		String[] arr = {"ILU","IHU","IDWU"};
+		for(String u:arr)
+		{
+			System.out.println(u);
+		}
+	}
+}
+
+
+
+
+
+o/p
+----
+ILU
+IHU
+IDWU
+
+2. package collection;
+
+import java.util.TreeSet;
+
+public class iiiiiiii 
+{
+	public static void main(String[] args) 
+	{
+		TreeSet i = new TreeSet();
+		i.add("Uday");
+		i.add("Smitha");
+		i.add("Rahul");
+		i.add("Prince");
+		for(Object o:i)
+		{
+			System.out.println(o);
+		}
+	}
+}
+
+o/p
+---------
+Prince
+Rahul
+Smitha
+Uday
+
+Disadvantages of for-each loop:
+---------------------------------------
+1. We cannot print the elements in reverse order
+2. We cannot fetch the particular/specified element in the array/collection
+
+Advantages of for-each loop:
+------------------------------
+1. Without using index we can fetch the element
+2. We can fetch all the elements one by one
+
+------------------------------------------------------------
+
+Constructor overloading
+---------------------------------------------------------------------
+Developing multiple constructors with the same name within the class but variations in the argument list is 
+called Constructor overloading
+
+Variations include
+
+- variation in the datatype
+- variation in the length of the arguments
+- variation in the order of occurence of arguments
+
+This calling statement   -----> this()
+-------------------------------------------
+- It is used in the case of constructor overloading
+- It is used to call from one constructor to another constructor within the class
+- It should be the first statement inside the constructor
+- We cannot develop 2 this calling statements in the single constructor 
+- It should be written explicitly
+
+Super calling statement    ----> super()
+--------------------------------------------------
+- It is used in the case of constructor overloading and inheritance
+- It is used to call from one constructor to another constructor between the classes
+- It can be written implicitly or explicitly
+- It should be the first statement inside the constructor
+- We cannot develop 2 super calling statements in the single constructor between the classes
+
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+
+Why multiple inheritance is not possible in java through classes?
+--------------------------------------------------------------------------------------------------------------
+- We cannot develop 2 super calling statements in the sub class constructor because super calling should be first 
+inherited
+- Due to diamond problem
+i.e each and every class extends object class which is the supermost class, will have the ambuguity(confusion) from which 
+super class it should inherit the properties
+- We can achieve multiple inheritance through interface
+- Interface does not support constructor
+Hence we don't develop 2 supercalling statements in the subclass constructor
+- Interface doesnot extend object class as Inteface itself is the supermost type
+By this we can overcome diamond problem 
+
+-------------------------------------------------------------------------------------------------------------------------
+
+How elements are stored in the form of object in collection?
+----------------------------------------------------------------
+Whenever we add the elements, the data type will get converted into corresponding wrapper class object and it will be upcasted to Object class
+and stored in the form of object
+
+
+Generic class
+-----------------------------
+To achieve generic type, we have to use angular braces
+By using generics, we can store homogeneous objects of a specified class type
+
+Wrapper class
+--------------------------------
+Wrapper classes are the inbuilt classes which belong to java.lang package
+- For each and every primitive datatypes we have corresponding class called wrapper class
+- We can perform operations called boxing and unboxing(will happen implicitly)
+
+primitive data types   ----->          Wrapper class 
+
+byte                                   Byte
+short                                  Short
+int                                    Integer
+long                                   Long
+float                                  Float
+double                                 Double
+char                                   Character
+boolean                                Boolean
+
+
+
+non primitive data type   --->        Wrapper class 
+
+string                                String
+
+Boxing
+-------------
+Converting from primitive data type to wrapper class object is called boxing
+
+Unboxing
+--------------
+Converting from wrapper class object back to its primitive data type is called unboxing
+
+
+Ex:
+
+public class box 
+{
+	public static void main(String[] args) 
+	{
+		Integer i = new Integer(8);  //boxing
+		System.out.println(i);
+		
+		int y = i;   //unboxing
+		System.out.println(y);
+		
+		Character c = new Character('A'); //boxing
+		System.out.println(c);
+		
+		char d = c;   //unboxing
+		System.out.println(d);
+	}
+}
+
+o/p
+----
+8
+8
+A
+A
+
+package collection;
+import java.util.ArrayList;
+public class box 
+{
+	public static void main(String[] args) 
+	{
+		ArrayList<Integer> l1 = new ArrayList<Integer>();
+		l1.add(10);
+		l1.add(23);
+		l1.add(43);
+		System.out.println(l1);
+		
+		l1.add(10);
+		Object o = new Integer(10);  //upcasted to Object class
+		System.out.println(o);
+		
+	}
+}
+
+o/p
+----
+[10, 23, 43]
+10
+--------------------------------------------------------------------------------------------------------------------
+
+
+Map
+-------------------------------------------------------------
+
+Map hierarchy
+
+
+- Map is an interface which belongs to java.util package
+- Whenever we want to store upon key and value, we should go for map
+
+Features of Map
+-------------------------------------
+- Size is dynamic
+- It can store heterogeneous type of data
+- It can store elements upon key and value
+- It cannot have duplicate keys
+- We can have duplicate values
+
+Map has 3 subclasses
+---------------------------
+- HashMap
+- TreeMap
+- LinkedHashMap
+
+HashMap
+------------------------------------------------
+It is a class which implements map interface
+
+Features of HashMap
+---------------------------------------
+- Size is dynamic
+- It can store heterogeneous type of data
+- It can store elements upon key and value
+- It cannot have duplicate keys
+- We can have duplicate values
+- It will not follow order of insertion
+
+package collection;
+
+import java.util.HashMap;
+
+public class map1 
+{
+	public static void main(String[] args) 
+	{
+		HashMap<String,Integer> h = new HashMap<String,Integer>();
+		h.put("Rohit", 23);
+		h.put("Ranjith",12);
+		h.put("Rakshith", 65);
+		h.put("Ravana", 34);
+		h.put("Ranjith",19);  //duplicate keys are not allowed and values get updated
+		System.out.println(h);
+	}
+}
+
+o/p
+----
+{Rohit=23, Rakshith=68, Ranjith=19, Ravana=34}
+
+LinkedHashMap
+--------------------------------------------
+Features 
+-----------------------------------
+- Size is dynamic
+- It can store heterogeneous type of data
+- It can store elements upon key and value
+- It cannot have duplicate keys
+- We can have duplicate values
+- It will follow order of insertion
+
+package collection;
+import java.util.LinkedHashMap;
+
+public class map1 
+{
+	public static void main(String[] args) 
+	{
+		LinkedHashMap<String,Integer> h = new LinkedHashMap<String,Integer>();
+		h.put("Rohit", 23);
+		h.put("Ranjith",12);
+		h.put("Rakshith", 65);
+		h.put("Ravana", 34);
+		h.put("Ranjith",19);  //duplicate keys are not allowed and values get updated
+		System.out.println(h);
+	}
+}
+
+
+o/p
+----
+{Rohit=23, Ranjith=19, Rakshith=65, Ravana=34}
+
+
+TreeMap
+-----------------------------
+Features
+------------------------------
+- Size is dynamic
+- It can store heterogeneous type of data
+- It can store elements upon key and value
+- It cannot have duplicate keys
+- We can have duplicate values
+- It is completely auto sorted(based on ascii values) based on key(not on the value)
+
+1. package collection;
+
+import java.util.TreeMap;
+
+public class map1 
+{
+	public static void main(String[] args) 
+	{
+		TreeMap<String,Integer> h = new TreeMap<String,Integer>();
+		h.put("Rohit", 23);
+		h.put("Ranjith",12);
+		h.put("Rakshith",23);
+		h.put("Ravana", 34);
+		h.put("Ranjith",19);  //duplicate keys are not allowed and values get updated
+		System.out.println(h);
+	}
+}
+
+
+o/p
+----
+{Rakshith=23, Ranjith=19, Ravana=34, Rohit=23}
+
+2. package collection;
+
+import java.util.TreeMap;
+
+public class map1 
+{
+	public static void main(String[] args) 
+	{
+		TreeMap<Integer,Integer> h = new TreeMap<Integer,Integer>();
+		h.put(54, 23);
+		h.put(98,12);
+		h.put(12,23);
+		h.put(7, 34);
+		h.put(12,19);  //duplicate keys are not allowed and values get updated
+		System.out.println(h);
+	}
+}
+
+o/p
+----
+{7=34, 12=19, 54=23, 98=12}
+
+Note: Map is a generic type by default
+
+Ex: ArrayList<String, Integer> l1 = new ArrayList<String, Integer>();
+
+WAP to count how many times each element is repeated in an array
+
+//WAP to count how many times each element is repeated in an array
+package hi;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+public class hi
+{
+	public static void main(String[] args) 
+	{
+		Map<String,Integer> m = new HashMap<String,Integer>();
+		String[] arr={"hi", "hlo", "bye", "tata", "hi", "hlo", "tata","hi"};
+		for(String s:arr)
+		{
+			if(!m.containsKey(s))   //if the key is not present then returns true
+			{
+				m.put(s, 1);
+			}
+			else
+			{
+				int count = m.get(s);
+				m.put(s, count+1);
+			}
+		}
+		for(Entry<String,Integer> o1:m.entrySet())
+		{
+			System.out.println(o1.getKey()+" "+o1.getValue());
+		}
+	}
+}
+
+o/p
+----
+hi 3
+hlo 2
+tata 2
+bye 1
+
+
+2. 
+
+//WAP to which element is repeated the most in an array
+package hi;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+public class hi
+{
+	public static void main(String[] args) 
+	{
+		Map<String,Integer> m = new HashMap<String,Integer>();
+		String[] arr={"hi", "hlo", "bye", "tata", "hi", "hlo", "tata","hi"};
+		for(String s:arr)
+		{
+			if(!m.containsKey(s))   //if the key is not present then returns true
+			{
+				m.put(s, 1);
+			}
+			else
+			{
+				int count = m.get(s);
+				m.put(s, count+1);
+			}
+		}
+		int largest = 0;  //3
+		String b=null;  //hi
+		for(Entry<String,Integer> o1:m.entrySet())
+		{
+			if(o1.getValue()>largest)
+			{
+				largest=o1.getValue();
+				b=o1.getKey();
+			}
+		}
+		System.out.println(b+" "+largest);
+	}
+}
+
+o/p
+----
+hi 3
+---------------------------------------------------------------------------
+
+
+Interview Questions
+----------------------
+
+JavaBean(encapsulation)
+
+It should have a no-arg constructor.
+It should provide methods to set and get the values of the properties known as getter() and setter() methods.
+
+-------------------------------------------------------------------------------------------------------------------------
+singleton class
+
+In object-oriented programming, a singleton class is a class that can have only one object (an instance of the class) at a time. After first 
+time, if we try to instantiate the Singleton class, the new variable also points to the first instance created.
+
+
+Singleton design pattern
+---------------------------
+When we want to restrict the object creation for 1 throughout the cycle of the program and application then we go for Singleton design pattern
+
+Ex:
+package single;
+class Sample
+{
+	static Sample s1;    //static to avoid object creation again
+	static int count = 0;  //static to avoid object creation again
+	int b=23;          //non static and global variable
+	private Sample()   //constructor is always nonstatic
+	{
+		count++;
+	}
+	public static Sample getInstance()   //Sample is the classtype
+	{
+		if(count<1)  //if 0<1 create the object and return the object address
+		{  
+			s1 = new Sample();  //restrict the object creation for 1 time
+		}
+		return s1;    //returns the object address of Sample
+	}
+	public static void setInstance(int x)
+	{
+		s1.b=x;  //copy 54 into b
+	}
+}
+public class Mainclass 
+{
+	public static void main(String[] args) 
+	{
+		Sample s2=Sample.getInstance();
+		System.out.println(s2.b);
+		Sample s3=Sample.getInstance();
+		System.out.println(s3.b);
+		Sample s4=Sample.getInstance();
+		System.out.println(s4.b);
+		Sample.setInstance(54);
+		System.out.println(s4.b);
+	}
+}
+
+
+o/p
+----
+23
+23
+23
+54
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+Comparable(java.lang)
+
+1. Comparable provides a single sorting sequence. 
+In other words, we can sort the collection on the basis of a single element 
+2. affects the original class
+3. compareTo() method to sort elements.
+4. We can sort the list elements of Comparable type by Collections.sort(List) method.
+------------------------------------------------------------------------------------------------------------------------------
+
+What are the features of java?
+
+1. It is robust and dynamic
+2. It is multithreaded
+3. It is compiled and interpreted
+4. It is secured
+5. It is simple and easy to understand
+6. It is platform independent
+7. It is object oriented programming language
+Note: It is not 100% object oriented programming language as it supports primitive data types
+8. It enables high performance
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+Why the main method is declared as public static void main(String[] args)?
+
+public - It is an application level access specifier/modifier which is globally available(even if anyone wants to access outside the class)
+static - It is a keyword and a modifier and it should be always static as unnecessary wastage of memory can be avoided
+void - It is a keyword and return type and it does not return any value as java program also terminates once after main method terminates
+it does not have to return any value
+main - It is a method name and an identifier
+String[] args - It is an argument where all the data passed will be stored in the form of String[] as it is of type java.lang.String class
+which stores java command line arguments 
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+What do you mean by System.out.println?
+
+System is a concrete class
+out is a global static reference variable
+println and print are the nonstatic methods of Printstream class
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+How to convert string value into integer?
+Once we get the string value, use Integer.parseInt() so that the string value gets converted into integer value
+
+Ex: 
+
+int x = Integer.parseInt("123");
+System.out.println(x);  //123
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+What is constructor chaining?What is the need of constructor chaining?
+
+Calling one constructor to another constructor while pointing to current object is called constructor chaining
+Done in 2 ways
+Within same class : using this()
+From super class : using super()
+It occurs through inheritance
+When we want to perform multiple tasks in single constructor without writing code separately for each task , 
+we can have code reusability and chaining of constructor in single constructor
+
+
+toCharArray() - It is a method which is used to convert the given string into char[] --> character array
+
+
+---------------------------------------------------------------------------------------------------------------
+
+Can the class be declared as final?
+
+Yes
+
+Class and class members(except constructor) can be declared with the keyword
+If a class is declared with the keyword final is called final class
+It is useful when creating an immutable class like the String class
+Final class cannot be inherited
+We can create object for final class
+Final method can be inherited
+Final method can be overloaded
+Final method cannot be overriden
+Final variable cannot be reinitialized
+
+---------------------------------------------------------------------------------------------------------------
+
+File handling
+-----------------------------------------------------------------------------
+It is nothing but collection of similar kind of files or data
+
+In java file is a class which belongs to java.io package which should be imported explicitly
+
+In file class we have nonstatic methods like
+
+1. mkdirs()---> make directories/folders
+2. createnewfile()---> it helps to create the file
+3. exists()---> It checks whether the file is present or not, if it is present it will return 
+true or else false
+4. delete()----> it is used to delete the file in the given path 
+
+ - FileWriter and FileReader are the inbuilt classes which belong to java.io package
+ - FileWriter class helps to write the data into the file
+ - FileReader class helps to read the data from the file
+
+1. 
+package file;
+
+import java.io.File;
+
+public class one 
+{
+	public static void main(String[] args) 
+	{
+		File f = new File("C://javaevening");
+		if(f.mkdirs())
+		{
+			System.out.println("folder created");
+		}
+		else
+		{
+			System.out.println("folder not created");
+		}
+		if(f.exists())
+		{
+			System.out.println("folder exists");
+		}
+		else
+		{
+			System.out.println("folder doesnot exist");
+		}
+		if(f.delete())
+		{
+			System.out.println("folder is deleted");
+		}
+		else
+		{
+			System.out.println("folder is not deleted");
+		}
+	}
+}
+
+o/p
+-----
+folder created
+folder exists
+folder is deleted
+
+3. package file;
+import java.io.*;
+public class one {
+	public static void main(String[] args) throws Exception
+	{
+		File f1=new File("C://java2//art1.txt");
+		if(f1.createNewFile())
+		{
+			System.out.println("file is created");
+		}
+		else
+		{
+			System.out.println("file is not created");
+		}
+	}
+}
+
+o/p
+----
+file is created
+
+3.
+package file;
+import java.io.*;
+public class Sample7 {
+	public static void main(String[] args) {
+		File f1=new File("C://java2//art.txt");
+		System.out.println(f1.mkdirs());
+		System.out.println(f1.getName());
+		System.out.println(f1.getAbsolutePath());
+		System.out.println(f1.getParent());
+		System.out.println(f1.getPath());
+		System.out.println(f1.getParentFile());
+		System.out.println(f1.toString());
+	}
+}
+
+o/p
+----
+true
+art.txt
+C:\java2\art.txt
+C:\java2
+C:\java2\art.txt
+C:\java2
+C:\java2\art.txt
+
+4.
+package file;
+import java.io.*;
+public class Sample3 {
+	public static void main(String[] args) throws Exception
+	{
+		File f1=new File("C://java2//art1.txt");
+		FileWriter fw=new FileWriter(f1);
+		fw.write("hey java");
+		System.out.println("data is written");
+		fw.flush();
+	}
+}
+
+o/p
+----
+data is written
+
+5.
+package file;
+import java.io.*;
+public class Sample4 {
+	public static void main(String[] args) throws Exception
+	{
+		File f1=new File("C://java2//art1.txt");
+		FileReader fr=new FileReader(f1);
+		char[] arr=new char[(int)f1.length()];
+		fr .read(arr);
+		String s1=new String(arr);
+		System.out.println(s1);
+	}
+}
+
+------------------------------------------------------------------------------------------------------
+
+
+Thread
+----------------------------------------------
+Thread is an execution instance which has its own CPU time and memory
+Thread is a class which belongs to java.lang package which has many inbuilt methods like 
+sleep() method
+
+Thread pauses the execution in miliseconds(long)
+
+Sleep() method
+-------------------------------------------
+It is a static method which pauses its execution for few miliseconds
+
+Ex for sleep method
+-----------------------
+package threads;
+public class threads {
+	public static void main(String[] args) throws InterruptedException {
+		for(int i=1;i<=19;i++)
+		{
+			System.out.println(i);
+			Thread.sleep(1000);
+		}
+	}
+}
+
+
+o/p
+------
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+
+
+Ex 1:
+
+package threads;
+class Demo extends Thread
+{
+	public void run()
+	{
+		System.out.println("hello");
+	}
+}
+class Demo2 implements Runnable
+{
+	public void run()
+	{
+		System.out.println("hii");
+	}
+}
+public class threads {
+	public static void main(String[] args) {
+		Demo d=new Demo();
+		Thread t=new Thread(d);
+		t.start();
+		Demo2 d2=new Demo2();
+		Thread t2=new Thread(d2);
+		t2.start();
+	}
+}
+o/p
+----
+hello
+hii
+
+
+currentThread
+----------------
+
+It is a static method of Thread class which will return the instance of currently executing thread
+
+3 major properties:
+1. Thread id - It will be generated by the system
+2. Thread priority - It is the priority given for the thread, where 1 is the least priority and 10 is the maximum with 5 
+being the normal priority
+3. Thread name - It is a name given for the thread
+
+Ex 3:
+
+package threads;
+public class threads {
+	public static void main(String[] args) {
+		Thread t1=Thread.currentThread();
+		System.out.println("****b4****");
+		System.out.println(t1.getName());
+		System.out.println(t1.getId());
+		System.out.println(t1.getPriority());
+		t1.setName("naguva nayana madhura mauna thread");
+		t1.setPriority(8);
+		System.out.println("****a4****");
+		System.out.println(t1.getName());
+		System.out.println(t1.getPriority());
+	}
+}
+
+o/p
+----
+****b4****
+main
+1
+5
+****a4****
+naguva nayana madhura mauna thread
+8
+
+Ex 2:
+package threads;
+class Demo1 extends Thread
+{
+	public void run()
+	{
+		for(int i=1;i<=10;i++)
+		{
+			System.out.println(i);
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+}
+class Demo3 implements Runnable
+{
+	public void run()
+	{
+		for(int i=100;i<=110;i++)
+		{
+			System.out.println(i);
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+}
+public class threads {
+	public static void main(String[] args) {
+		Demo1 d=new Demo1();
+		Thread t=new Thread(d);
+		t.start();
+		Demo3 d1=new Demo3();
+		Thread t1=new Thread(d1);
+		t1.start();
+	}
+}
+
+o/p
+----
+1
+100
+2
+101
+3
+102
+4
+103
+5
+104
+105
+6
+106
+7
+8
+107
+9
+108
+10
+109
+110
+
+
+Multithreading
+-----------------------------------------------
+Processing multiple threads simultaneously is called as Multithreading
+It is non synchronized
+
+Multitasking
+---------------------------------------------
+It is a process of executing multiple tasks simultaneously is called as multi tasking
+
+Synchronization
+----------------------------------------
+Processing 1 by 1 thread/resource
+
+Describe different states of a thread.
+4 states in thread life cycle in java are new, runnable, non-runnable and terminated. 
+---------------------------------------------------------------------------------
+
+wait() method - It is a nonstatic method of object class which will make all the threads to wait till it is notified
+
+notify() method - It is a nonstatic method of object class which will just notify the thread which is about to access the source
+
+notifyAll() method - It is a nonstatic method of object class which will notify all the threads which are about to access the source
+
+finalize() method - It is a nonstatic method of object class whenever an object is deferenced, it will get invoked through System.gc()
+
+package hi;
+class Sample
+{
+	public void finalize()
+	{
+		System.out.println("invoked finalize");
+	}
+}
+public class hi
+{
+	public static void main(String[] args) 
+	{
+		Sample s1 = new Sample();
+		Sample s2 = new Sample();
+		Sample s3 = new Sample();
+		s1=null;
+		s2=null;
+		s3=null;
+		System.out.println("hiiiiiiiii");
+		System.gc();
+	}
+}
+
+o/p
+-----
+hiiiiiiiii
+invoked finalize
+invoked finalize
+invoked finalize
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. 
+import java.io.*;
+public class Sample1 {
+	public static void main(String[] args) {
+		File f1=new File("C://Users/pawan/Desktop/program/appln");
+		if(f1.mkdirs())
+		{
+			System.out.println("folder is created");
+		}
+		else
+		{
+			System.out.println("Folder is not created");
+		}
+		if(f1.exists())
+		{
+			System.out.println("folder exits");
+		}
+		else
+		{
+			System.out.println("folder not exits");
+		}
+		if(f1.delete())
+		{
+			System.out.println("folder is deleted");
+		}
+		else
+		{
+			System.out.println("folder is not deleted");
+		}
+	}
+}
+
+2. 
+import java.io.*;
+public class Sample2 {
+	public static void main(String[] args) throws Exception
+	{
+		File f1=new File("C://Users/pawan/Desktop/program/appln.txt");
+		if(f1.createNewFile())
+		{
+			System.out.println("file is created");
+		}
+		else
+		{
+			System.out.println("file is not created");
+		}
+	}
+}
+
+3.
+import java.io.*;
+public class Sample3 {
+	public static void main(String[] args) throws Exception
+	{
+		File f1=new File("C://Users/pawan/Desktop/program/appln.txt");
+		FileWriter fw=new FileWriter(f1);
+		fw.write("hey java");
+		System.out.println("data is written");
+		fw.flush();
+	}
+}
+
+4.
+import java.io.*;
+public class Sample4 {
+	public static void main(String[] args) throws Exception
+	{
+		File f1=new File("C://Users/pawan/Desktop/program/appln.txt");
+		FileReader fr=new FileReader(f1);
+		char[] arr=new char[(int)f1.length()];
+		fr .read(arr);
+		String s1=new String(arr);
+		System.out.println(s1);
+	}
+}
+
+5.
+import java.io.*;
+public class Sample5 {
+	public static void main(String[] args) throws Exception
+	{
+		File f1=new File("C://Users/pawan/Desktop/program/appln.txt");
+		FileWriter fw=new FileWriter(f1,true);
+		BufferedWriter bw=new BufferedWriter(fw);
+		bw.write("hey");
+		bw.newLine();
+		bw.write("qspider");
+		System.out.println("data is written...");
+		bw.flush();
+	}
+}
+
+6.
+import java.io.*;
+public class Sample6 {
+	public static void main(String[] args)throws Exception
+	{
+		File f1=new File("C://Users/pawan/Desktop/program/appln.txt");
+		FileReader fr=new FileReader(f1);
+		BufferedReader br=new BufferedReader(fr);
+		String s1=br.readLine();
+		while(s1!=null)
+		{
+			System.out.println(s1);
+			s1=br.readLine();
+		}
+	}
+}
+
+7.
+import java.io.*;
+public class Sample7 {
+	public static void main(String[] args) {
+		File f1=new File("C://Users/pawan/Desktop/program/java/mava/athey");
+		System.out.println(f1.mkdirs());
+		System.out.println(f1.getName());
+		System.out.println(f1.getAbsolutePath());
+		System.out.println(f1.getParent());
+		System.out.println(f1.getPath());
+		System.out.println(f1.getParentFile());
+		System.out.println(f1.toString());
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
