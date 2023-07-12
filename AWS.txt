@@ -1,0 +1,7 @@
+Please inform your BCs to use the following DC IPs for FIXED KIOSK MODEL from tomorrow.
+https://10.100.89.26:8443/vakrangeekiosk/
+https://10.100.89.26:8443/visionkiosk
+https://10.100.89.26:8443/fiakiosk
+https://10.100.89.26:8443/atyatikiosk
+https://10.100.89.26:443/ikiosk
+https://10.100.89.26:443/csckiosk
